@@ -7,12 +7,11 @@
 }
 .certification-logos-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	gap: 16px 12px;
 }
 .certification-logos-grid img {
-	width: 70px;
-	height: 70px;
+	width: 110px;
 	object-fit: cover;
 	border-radius: 8px;
 	background: #fff;
@@ -218,11 +217,9 @@ section h2 {
     margin-bottom: 50px;
 }
 .company-logo {
-	width: 50px;
-	height: 50px;
+	width: 100px;
 	object-fit: contain;
-	background: #fff;
-	border-radius: 8px;
+	background: #fff;;
 }
 .company-details h3 {
 	font-size: 1rem;
