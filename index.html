@@ -3,182 +3,665 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Karthik Sukumaran - Senior IT Architect</title>
+	<title>Karthik Sukumaran — AI Architect | GenAI Solutions Architect</title>
+	<meta name="description" content="Karthik Sukumaran — AI / GenAI Solutions Architect with 16+ years architecting enterprise platforms for global financial clients. LLM, RAG, and agentic systems with enterprise-grade governance.">
+	<meta name="author" content="Karthik Sukumaran">
+	<meta property="og:title" content="Karthik Sukumaran — AI Architect | GenAI Solutions Architect">
+	<meta property="og:description" content="16+ years architecting enterprise platforms. Now designing production-grade LLM, RAG, and agentic systems for regulated environments.">
+	<meta property="og:type" content="profile">
+	<meta property="og:url" content="https://karthiksukumaran.com">
+	<meta property="og:image" content="https://karthiksukumaran.com/images/profile.jpg">
+	<meta name="theme-color" content="#0b1220">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+
+	<script>
+		// Apply saved theme before paint to avoid a flash
+		try {
+			var t = localStorage.getItem('theme');
+			if (t) document.documentElement.setAttribute('data-theme', t);
+		} catch (e) {}
+	</script>
 </head>
 <body>
-	<div class="container">
-		<aside class="sidebar">
-			<div class="sidebar-profile">
-				<img src="images/profile.jpg" alt="Karthik Sukumaran" class="profile-img">
-				<div class="profile-info">
-					<h1>Karthik Sukumaran</h1>
-					<p class="subtitle">Senior IT Architect</p>
-				</div>
+	<!-- ============ NAV ============ -->
+	<header class="nav" id="nav">
+		<div class="nav-inner">
+			<a href="#top" class="brand" aria-label="Karthik Sukumaran — home">
+				<span class="brand-mark">KS</span>
+				<span class="brand-name">Karthik Sukumaran</span>
+			</a>
+			<nav class="nav-links" id="navLinks" aria-label="Primary">
+				<a href="#about">About</a>
+				<a href="#ai">AI</a>
+				<a href="#citi">Citi</a>
+				<a href="#experience">Experience</a>
+				<a href="#skills">Skills</a>
+				<a href="#credentials">Credentials</a>
+				<a href="#contact" class="nav-cta">Contact</a>
+			</nav>
+			<div class="nav-actions">
+				<button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+					<svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+					<svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+				</button>
+				<button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+					<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+				</button>
 			</div>
-			<div class="sidebar-email">
-				<span>karthik.sukumaran@gmail.com</span>
-			</div>
-			<div class="sidebar-section">
-				<h2>Skills</h2>
-				<ul>
-					<li>Product Manager</li>
-					<li>AI Integration Specialist</li>
-					<li>Prompt Engineering, GenAI, Blockchain</li>
-					<li>OpenAI, Pinecode, Chroma</li>
-					<li>Figma Plugin Development</li>
-					<li>NodejS, Python, Java</li>
-					<li>Hyperledger Fabric, Ethereum, Corda</li>
-					<li>Documentum</li>
-				</ul>
-			</div>
-			<div class="sidebar-section">
-				<h2>Links</h2>
-				<ul class="links">
-					<li><img src="images/linkedin.png" alt="LinkedIn"><a href="https://www.linkedin.com/in/karthiksukumaran06/" target="_blank">LinkedIn</a></li>
-					<li><img src="images/link.png" alt="Website"><a href="https://karthiksukumaran.com" target="_blank">Website</a></li>
-				</ul>
-			</div>
-			<div class="sidebar-logos">
-				<img src="images/annauniv.png" alt="Logo 1">
-				<img src="images/caltech.png" alt="Logo 2">
-			</div>
-		</aside>
-		<main class="main-content">
-			<section class="about">
-				<h2>About</h2>
-				<div class="section-underline"></div>
-				<p>
-					An accomplished Architect with expertise in Managing, Architecting, and Designing Enterprise Applications, particularly in Content Management, Blockchain, and Reporting within the Banking domain. Recently gained extensive knowledge in integrating OpenAI and Retrieval-Augmented Generation (RAG) into enterprise solutions. Skilled in aligning IT architecture with business objectives, analyzing and mapping requirements to software systems, and developing IT roadmaps to meet both short- and long-term goals. Adept at leading cross-functional, geographically distributed teams, driving Agile-based development, and delivering high-quality solutions on time and within budget. Proven ability to take ownership of multi-phase, multi-year strategic initiatives, ensuring the highest standards of customer experience and quality across the full lifecycle of complex projects.
-				</p>
-			</section>
-			<section class="technical-skills">
-				<h2>Technical Skills</h2>
-				<div class="section-underline"></div>
-				<ul>
-					<li><strong>Specialized Skills:</strong> Agentic AI, Langgraph, OpenAI API, Claude, Prompt Engineering, RAG, Figma Plugin Development</li>
-					<li><strong>Programming Languages:</strong> Node.js, Python, GoLang, Java, J2EE, JavaScript, jQuery, DFC, NoSQL, DQL</li>
-					<li><strong>Operating Systems:</strong> Ubuntu, Windows</li>
-					<li><strong>Cloud Platforms:</strong> Azure, IBM Cloud, AWS</li>
-					<li><strong>Frameworks:</strong> Express.js, Spring, Jersey RESTful, Angular, React, OAuth</li>
-					<li><strong>Tools, Databases, and Packages:</strong> Documentum, Elastic Search, Hyperledger, Ethereum, Corda, OpenAI, RAG, GenAI, Figma</li>
-					<li><strong>Application Servers:</strong> WebSphere, WebLogic, JBoss, Tomcat</li>
-					<li><strong>Databases:</strong> MongoDB, Cloudant, Oracle SQL Server, MySQL, IBM DB2</li>
-					<li><strong>Vector Databases:</strong> Pinecone, Chroma, Pinecode, ChromaDB</li>
-					<li><strong>Development Tools:</strong> Eclipse, IBM RTC, Documentum Composer, Process Builder, Visual Studio Code, Figma Plugin Development</li>
-					<li><strong>Source Maintenance:</strong> IBM RTC, Git, VSS</li>
-					<li><strong>Execution Methodologies:</strong> Agile, Kanban, Waterfall</li>
-					<li><strong>Change Management Tools:</strong> ServiceNow</li>
-				</ul>
-			</section>
-			<section class="certifications">
-				<h2>Certifications</h2>
-				<div class="section-underline"></div>
-				<div class="certifications-grid">
-					<div class="certification-logos-grid">
-						<img src="images/cert1.jpg" alt="ITIL4 1">
-						<img src="images/cert2.png" alt="ITIL4 2">
-						<img src="images/cert3.png" alt="ITIL4 3">
-						<img src="images/cert4.png" alt="ITIL4 4">
-						<img src="images/cert5.png" alt="ITIL4 5">
-						<img src="images/cert6.png" alt="ITIL4 6">
+		</div>
+	</header>
+
+	<main id="top">
+		<!-- ============ HERO ============ -->
+		<section class="hero">
+			<div class="hero-bg" aria-hidden="true"></div>
+			<div class="wrap hero-grid">
+				<div class="hero-copy">
+					<p class="eyebrow"><span class="dot"></span> AI Architect · GenAI Solutions Architect</p>
+					<h1>Designing production-grade <span class="grad">LLM, RAG &amp; agentic systems</span> for the enterprise.</h1>
+					<p class="lead">
+						16+ years architecting and delivering enterprise platforms for global financial clients —
+						Citibank APAC, Citibank India, and USAA. I bring enterprise-grade governance, security,
+						and reliability to AI adoption in regulated environments.
+					</p>
+					<div class="hero-ctas">
+						<a href="#contact" class="btn btn-primary">Get in touch
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+						</a>
+						<a href="https://www.linkedin.com/in/karthiksukumaran06/" target="_blank" rel="noopener" class="btn btn-ghost">
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+							LinkedIn
+						</a>
 					</div>
-					<ul class="certification-list">
-						<li>ITIL Foundation</li>
-						<li>AWS Practitioner</li>
-						<li>MongoDB SI Associate</li>
-						<li>Corda for Business Professional</li>
-						<li>Corda Certified Developer</li>
-						<li>Certificate for New Product Development from IIM-B</li>
-						<li>Blockchain for Business – Linux Foundation Certification</li>
-						<li>IBM Blockchain Platform - Blockchain Essentials</li>
-						<li>IBM Blockchain Platform – Developer Foundation</li>
+					<p class="hero-cred"><img src="images/caltech.png" alt="" width="22" height="22"> Post Graduate Program in AI &amp; Machine Learning — Caltech CTME</p>
+					<ul class="hero-tags" aria-label="Focus areas">
+						<li>Agentic AI</li><li>RAG</li><li>LangGraph</li><li>MCP</li><li>OpenAI</li><li>Claude</li><li>Pinecone</li><li>ChromaDB</li><li>Guardrails</li><li>Azure</li>
 					</ul>
 				</div>
-			</section>
-			<section class="experience">
-				<h2>Experience</h2>
-				<div class="section-underline"></div>
-				<div class="experience-company">
-					<img src="images/hcl.png" alt="Company Logo" class="company-logo">
-					<div class="company-details">
-						<h3>HCLTech - Senior Technical Architect - Blockchain and GenAI Solutions</h3>
-						<span class="company-dates">Sep 2021 - present</span>
-						<ul>
-							<li><strong>AI-Powered Code Generation:</strong> Spearheaded the development of "Design 2 Code," an innovative solution that automates the transformation of Figma designs into React, Angular, NextJS or CMS-compatible code using OpenAI, Claude, Retrieval-Augmented Generation (RAG), ChromaDB, and Pinecone, driving efficiency in the development lifecycle</li>
-							<li><strong>Blockchain Solutions Development:</strong> Evaluated use cases, identified suitable blockchain products, and architected solutions that integrate seamlessly with clients' existing workflows to enhance efficiency and reliability</li>
-						</ul>
+				<div class="hero-portrait">
+					<div class="portrait-frame">
+						<img src="images/profile.jpg" alt="Portrait of Karthik Sukumaran" width="917" height="948">
+					</div>
+					<div class="float-card fc-1">
+						<span class="fc-num">3 days → 1 hr</span>
+						<span class="fc-label">Design-to-code with AIForce D2C</span>
+					</div>
+					<div class="float-card fc-2">
+						<span class="fc-num">Citi · 9 markets</span>
+						<span class="fc-label">APAC content platform, zero SAST/DAST</span>
 					</div>
 				</div>
-                <div class="experience-company">
-					<img src="images/citi.png" alt="Company Logo" class="company-logo">
-					<div class="company-details">
-						<h3>Citibank - Product Manager</h3>
-						<span class="company-dates">Aug 2018 - Sep 2021</span>
-                        <div>
-                            Led the development and management of content management solutions for 9 countries in the APAC region, including Australia, China, Hong Kong, Singapore, Thailand, Malaysia, Vietnam, Philippines, and Indonesia. Acted as a strategic and technical leader, ensuring business needs were met through innovative, reliable, and compliant solutions.
-                        </div>
-                        <h3>Key Responsibilities:</h3>
-                        <ul>
-							<li>Provided robust solutions for complex business requirements</li>
-							<li>Served as a Proxy Product Owner, managing priorities and bridging the gap between business and technical teams</li>
-							<li>Built and mentored high-performing development teams to deliver on critical projects</li>
-							<li>Conducted comprehensive code reviews to maintain high-quality standards</li>
-							<li>Developed complex, scalable solutions tailored to client needs</li>
-							<li>Ensured seamless maintenance of production and lower environments while resolving issues promptly</li>
-						</ul>
-					</div>
+			</div>
+		</section>
+
+		<!-- ============ STATS ============ -->
+		<section class="stats-band" aria-label="Key numbers">
+			<div class="wrap stats">
+				<div class="stat"><span class="stat-tag">AI</span><span class="stat-num">3 days → 1 hr</span><span class="stat-label">Design-to-code effort with agentic GenAI</span></div>
+				<div class="stat"><span class="stat-tag">AI</span><span class="stat-num">3+ yrs</span><span class="stat-label">Architecting GenAI products for enterprise</span></div>
+				<div class="stat"><span class="stat-tag citi">Citi</span><span class="stat-num">9 markets</span><span class="stat-label">APAC content platform owned DEV → PROD</span></div>
+				<div class="stat"><span class="stat-tag citi">Citi</span><span class="stat-num">Zero</span><span class="stat-label">SAST &amp; DAST findings after re-architecture</span></div>
+			</div>
+		</section>
+
+		<!-- ============ ABOUT ============ -->
+		<section class="section" id="about">
+			<div class="wrap about-grid">
+				<div class="section-head">
+					<p class="kicker">01 — About</p>
+					<h2>Enterprise rigor, applied to AI.</h2>
 				</div>
-                <div class="experience-company">
-					<img src="images/hcl.png" alt="Company Logo" class="company-logo">
-					<div class="company-details">
-						<h3>HCLTech - Senior Technical Lead</h3>
-						<span class="company-dates">Mar 2013 - Aug 2018</span>
-                        <ul>
-							<li>Led the development and management of content Experienced professional with expertise in requirement gathering, project planning, and onsite-offshore coordination to drive seamless project execution</li>
-							<li>Proficient in Agile methodologies, including sprint planning, task assignment, and team leadership. Adept at code reviews, Webtop customization, and schedule job creation to ensure quality and efficiency</li>
-							<li>As a Blockchain Architect and core team member of HCL CoTrust Platform, I have built MVPs on Hyperledger (1.0, 0.6) and Ethereum, showcasing innovative solutions in decentralized systems. Skilled in delivering high-impact solutions through strategic collaboration and technical excellence</li>
-						</ul>
-					</div>
-				</div>
-                <div class="experience-company">
-					<img src="images/polaris.jpg" alt="Company Logo" class="company-logo">
-					<div class="company-details">
-						<h3>Polaris(Virtusa) - Associate Consultant</h3>
-						<span class="company-dates">Dec 2009 - Mar 2013</span>
-                        <ul>
-							<li>Implemented EMC Documentum 6.5 SP3 for Citi Wealth Advisory, delivering a comprehensive Document Tracking and Data Entry Workflow Solution for Citibank India. Spearheaded the integration of a Single Account Opening Form, enabling customers to select products like Banking, Credit Card, Personal Loan, and Mortgage Loan. Designed and developed DFS services and multi-workflow enhancements using the Documentum Framework, ensuring seamless functionality and scalability. Contributed to optimizing processes and improving customer experience through innovative workflow solutions tailored to business needs.</li>
-						</ul>
-					</div>
-				</div>
-				<!-- Repeat .experience-company for more experiences if needed -->
-			</section>
-			<section class="awards">
-				<h2>Awards & Appreciations</h2>
-				<div class="section-underline"></div>
-				<div class="awards-content">
-					<img src="images/award.jpeg" alt="Award" class="award-img">
-					<ul>
-						<li>Received <strong>O-Infinity award</strong> for getting Outstanding rating for 4 continuous years in HCL (2021 to till date)</li>
-						<li>Received <strong>O-Infinity award</strong> for getting Outstanding rating for 4 continuous years in HCL (2013 to 2018)</li>
-						<li>Received <strong>GEM (Gone extra Mile)</strong> award for performing outstandingly for Citibank Client in Auto Fulfillment Unit project in Polaris in year 2011</li>
+				<div class="about-body reveal">
+					<p>
+						I'm an AI / GenAI Solutions Architect with 16+ years architecting, delivering, and managing
+						enterprise applications for large-scale financial clients. Today I focus on designing
+						production-grade LLM, RAG, and agentic systems — and on the governance, security, and reliability
+						that make AI adoption work in regulated environments.
+					</p>
+					<ul class="check-list">
+						<li>Architect of AI-driven platforms spanning RAG pipelines, multi-model orchestration (OpenAI, Claude), agentic workflows (LangGraph, MCP), and vector search (Pinecone, ChromaDB), containerized and deployed on Azure.</li>
+						<li>Proven delivery at scale: re-architected legacy content management into microservices across 9 APAC countries, cut Hyperledger Fabric setup from 3 weeks to 30 minutes, and migrated 3.5M documents in 8 hours.</li>
+						<li>Aligns IT architecture with business objectives, builds IT roadmaps, and leads cross-functional, geographically distributed teams through Agile delivery — on time and within budget.</li>
 					</ul>
+					<dl class="facts">
+						<div><dt>Key clients</dt><dd>Citibank APAC · Citibank India · USAA</dd></div>
+						<div><dt>Geographies</dt><dd>Asia · India · USA</dd></div>
+						<div><dt>Primary roles</dt><dd>AI / Solutions Architect · GenAI &amp; Agentic AI · Product Architect</dd></div>
+					</dl>
 				</div>
-			</section>
-			<section class="education">
-				<h2>Education</h2>
-				<div class="section-underline"></div>
-				<ul>
-					<li><strong>Post Graduate Program in AI and Machine learning</strong> from Caltech CTME</li>
-					<li><strong>B.E</strong> in <strong>Electronics and Communication Engineering</strong> from Anand Institute of Higher Technology under <strong>Anna University</strong></li>
-				</ul>
-			</section>
-		</main>
-	</div>
+			</div>
+		</section>
+
+		<!-- ============ AI ARCHITECTURE ============ -->
+		<section class="section section-dark" id="ai">
+			<div class="dark-bg" aria-hidden="true"></div>
+			<div class="wrap">
+				<div class="section-head center">
+					<p class="kicker light">02 — AI Architecture</p>
+					<h2>Production GenAI, architected end to end.</h2>
+					<p class="section-sub">3+ years architecting AI-based products and advising large financial clients on integrating GenAI into enterprise BAU applications — from retrieval and orchestration through to governance.</p>
+				</div>
+
+				<div class="ai-grid">
+					<div class="ai-stack reveal" aria-label="GenAI reference stack">
+						<p class="stack-title">The stack I design &amp; govern</p>
+						<div class="layer l-gov">
+							<div class="layer-name"><span>05</span>Governance</div>
+							<ul><li>AI usage governance</li><li>Guardrails</li><li>LLM evaluation</li></ul>
+						</div>
+						<div class="layer l-agent">
+							<div class="layer-name"><span>04</span>Agents</div>
+							<ul><li>LangGraph</li><li>MCP</li><li>Feedback loops</li></ul>
+						</div>
+						<div class="layer l-orch">
+							<div class="layer-name"><span>03</span>Orchestration</div>
+							<ul><li>OpenAI</li><li>Claude</li><li>Multi-model routing</li><li>Prompt engineering</li></ul>
+						</div>
+						<div class="layer l-ret">
+							<div class="layer-name"><span>02</span>Retrieval</div>
+							<ul><li>RAG</li><li>Pinecone</li><li>ChromaDB</li><li>Elasticsearch</li></ul>
+						</div>
+						<div class="layer l-plat">
+							<div class="layer-name"><span>01</span>Platform</div>
+							<ul><li>Azure</li><li>Docker</li><li>Kubernetes</li></ul>
+						</div>
+					</div>
+
+					<div class="ai-principles">
+						<article class="principle reveal">
+							<div class="p-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></div>
+							<h3>Grounded in enterprise data</h3>
+							<p>RAG pipeline design over vector search, so model output is anchored in the organization's own context.</p>
+						</article>
+						<article class="principle reveal">
+							<div class="p-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
+							<h3>Agentic, with feedback loops</h3>
+							<p>Autonomous agents that interpret, generate, and refine their own output iteratively — built on LangGraph and MCP.</p>
+						</article>
+						<article class="principle reveal">
+							<div class="p-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path d="M8 8l3 7M16 8l-3 7"/></svg></div>
+							<h3>Model-agnostic by design</h3>
+							<p>Multi-model orchestration and routing across OpenAI and Claude, with prompt-engineering patterns that maximize accuracy.</p>
+						</article>
+						<article class="principle reveal">
+							<div class="p-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+							<h3>Governed for regulated industries</h3>
+							<p>AI usage governance, guardrails, and evaluation — shaped by 16+ years of delivery for banks where security and compliance are non-negotiable.</p>
+						</article>
+					</div>
+				</div>
+
+				<article class="feature feature-dark reveal">
+					<div class="feature-copy">
+						<span class="pill pill-glow">Flagship · Agentic GenAI</span>
+						<h3>HCLTech AIForce D2C</h3>
+						<p>
+							An agentic Design-to-Code platform I designed and built, converting Figma designs into
+							production-ready React, Angular, Next.js, and CMS code.
+						</p>
+						<div class="metric-row">
+							<div><strong>3 days → 1 hr</strong><span>Average design-to-code effort</span></div>
+							<div><strong>4</strong><span>Output targets</span></div>
+							<div><strong>Published</strong><span>Plugin on Figma Community</span></div>
+						</div>
+						<ul class="mini-list">
+							<li>Multi-model LLM orchestration across OpenAI and Claude</li>
+							<li>RAG over a ChromaDB / Pinecone vector store for components, layouts, and design tokens</li>
+							<li>Autonomous agents that interpret UI, generate code, and refine output through iterative feedback loops</li>
+							<li>Enterprise standards for generated code — performance, accessibility, maintainability</li>
+							<li>Containerized and deployed on Azure</li>
+						</ul>
+					</div>
+					<div class="feature-visual" aria-hidden="true">
+						<div class="flow">
+							<div class="flow-node">Figma design</div>
+							<div class="flow-arrow"></div>
+							<div class="flow-node flow-core">
+								<span>Agent orchestration</span>
+								<small>OpenAI · Claude · LangGraph</small>
+							</div>
+							<div class="flow-arrow"></div>
+							<div class="flow-node flow-sub">RAG · Pinecone / ChromaDB</div>
+							<div class="flow-arrow"></div>
+							<div class="flow-node flow-sub">Iterative refinement loop ↻</div>
+							<div class="flow-arrow"></div>
+							<div class="flow-out">
+								<span>React</span><span>Angular</span><span>Next.js</span><span>CMS</span>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- ============ CITIBANK ============ -->
+		<section class="section section-alt" id="citi">
+			<div class="wrap">
+				<div class="section-head center">
+					<p class="kicker">03 — Citibank</p>
+					<h2>Leading a regulated banking platform across 9 APAC markets.</h2>
+					<p class="section-sub">Manager, Citibank N.A. · Aug 2018 – Sep 2021 — strategic and technical owner of the content management platform, DEV through PROD.</p>
+				</div>
+
+				<div class="citi-hero reveal">
+					<div class="citi-left">
+						<div class="citi-brand"><img src="images/citi.png" alt="Citibank"></div>
+						<p class="citi-lede">Reliable, secure, and compliant content management for Citi across Asia-Pacific — modernized, hardened, and upgraded end to end while staying live.</p>
+						<p class="mini-head">Markets served</p>
+						<ul class="countries">
+							<li><b>AU</b>Australia</li><li><b>CN</b>China</li><li><b>HK</b>Hong Kong</li>
+							<li><b>SG</b>Singapore</li><li><b>TH</b>Thailand</li><li><b>MY</b>Malaysia</li>
+							<li><b>VN</b>Vietnam</li><li><b>PH</b>Philippines</li><li><b>ID</b>Indonesia</li>
+						</ul>
+					</div>
+					<div class="citi-arch" aria-label="Target architecture after re-architecture">
+						<p class="mini-head">Re-architecture</p>
+						<div class="arch-row">
+							<div class="arch-box muted">Legacy SOAP services</div>
+							<div class="arch-box">New REST APIs</div>
+						</div>
+						<div class="arch-join"></div>
+						<div class="arch-box strong">Microservices</div>
+						<div class="arch-join single"></div>
+						<div class="arch-box strong alt">Shared business-logic layer</div>
+						<div class="arch-join single"></div>
+						<div class="arch-row">
+							<div class="arch-box muted">Documentum</div>
+							<div class="arch-box muted">Captiva</div>
+						</div>
+						<div class="arch-badges">
+							<span class="ok">0 SAST findings</span>
+							<span class="ok">0 DAST findings</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="impact-grid">
+					<article class="impact reveal">
+						<span class="impact-num">01</span>
+						<h3>Microservice re-architecture</h3>
+						<p>Designed and led the team to re-architect the entire legacy codebase into microservices, with one shared business layer serving both legacy SOAP and new REST.</p>
+					</article>
+					<article class="impact reveal">
+						<span class="impact-num">02</span>
+						<h3>Zero SAST &amp; DAST findings</h3>
+						<p>Drove the codebase to a clean security scan by embedding secure-coding standards and comprehensive code reviews into delivery.</p>
+					</article>
+					<article class="impact reveal">
+						<span class="impact-num">03</span>
+						<h3>Full-stack upgrade, 9 countries</h3>
+						<p>Upgraded RHEL, WAS, IHS, database, Documentum, and Captiva across every market — coordinating multiple teams through to completion.</p>
+					</article>
+					<article class="impact reveal">
+						<span class="impact-num">04</span>
+						<h3>Resilience &amp; compliance</h3>
+						<p>Owned End-of-Life and End-of-Vendor-Support upgrades, ran cross-team Disaster Recovery drills, and delivered within mandated change windows.</p>
+					</article>
+					<article class="impact reveal">
+						<span class="impact-num">05</span>
+						<h3>Product ownership</h3>
+						<p>Served as Proxy Product Owner — owning BAU, enhancements, and environment compliance, and bridging business and technology priorities.</p>
+					</article>
+					<article class="impact reveal">
+						<span class="impact-num">06</span>
+						<h3>Team leadership</h3>
+						<p>Built and mentored high-performing development teams to deliver critical, time-sensitive projects in a highly regulated environment.</p>
+					</article>
+				</div>
+
+				<div class="citi-earlier reveal">
+					<div class="ce-tag">Earlier with Citi</div>
+					<div class="ce-body">
+						<h3>Citibank India · Citi Wealth Advisory <span>via Polaris FT, 2009 – 2013</span></h3>
+						<p>Delivered a Documentum 6.5 Document Tracking and Data Entry Workflow solution, and led integration of a Single Account Opening Form spanning Banking, Credit Card, Personal Loan, and Mortgage products.</p>
+					</div>
+					<div class="ce-award"><span class="award-badge gem">GEM</span><span>Gone Extra Mile award for the Citibank Auto Fulfillment Unit project, 2011</span></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ MORE HIGHLIGHTS ============ -->
+		<section class="section" id="work">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="kicker">04 — More highlights</p>
+					<h2>Other work that moved the numbers</h2>
+				</div>
+				<div class="cards-3">
+					<article class="card reveal">
+						<span class="pill">Blockchain</span>
+						<h3>CoTrust Blockchain Console</h3>
+						<p>Centralized Hyperledger Fabric setup and administration, reducing environment provisioning from ~3 weeks of error-prone manual effort to <strong>30 minutes</strong>.</p>
+					</article>
+					<article class="card reveal">
+						<span class="pill">Scale</span>
+						<h3>High-volume migration</h3>
+						<p>Built a multithreaded migration job that moved <strong>3.5 million documents in 8 hours</strong> between storage platforms.</p>
+					</article>
+					<article class="card reveal">
+						<span class="pill">Analytics</span>
+						<h3>Productivity dashboard</h3>
+						<p>ETL, REST API, Angular, and Highcharts dashboard tracking work time, idle time, and per-task effort for <strong>task-level productivity analysis</strong>.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ COMPETENCIES ============ -->
+		<section class="section section-alt" id="competencies">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="kicker">05 — Core competencies</p>
+					<h2>What I bring to a team</h2>
+				</div>
+				<div class="comp-grid">
+					<article class="comp comp-featured reveal">
+						<div class="comp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+						<h3>AI / GenAI Architecture</h3>
+						<p class="comp-meta">3+ years</p>
+						<p>RAG pipeline design, agentic workflows (LangGraph, MCP), multi-model orchestration, prompt engineering, and AI usage governance for regulated environments. Advising on GenAI integration with enterprise BAU applications.</p>
+					</article>
+					<article class="comp reveal">
+						<div class="comp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+						<h3>Enterprise Solution Architecture</h3>
+						<p class="comp-meta">16+ years · 10+ on Documentum</p>
+						<p>Full SDLC and ITIL lifecycle — strategy, design, transition, operation, and continual improvement. Architecting, migrating, and upgrading enterprise content management at scale.</p>
+					</article>
+					<article class="comp reveal">
+						<div class="comp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+						<h3>Blockchain Architecture</h3>
+						<p class="comp-meta">3+ years</p>
+						<p>Evaluating use cases and architecting secure, scalable, compliant solutions on Hyperledger Fabric, Ethereum, and Corda, integrated into clients' existing workflows.</p>
+					</article>
+					<article class="comp reveal">
+						<div class="comp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+						<h3>Leadership &amp; Delivery</h3>
+						<p class="comp-meta">9+ years in project management</p>
+						<p>Owning products DEV through PROD — BAU, enhancements, DR, compliance, and upgrades. Building and mentoring distributed teams; standardizing runbooks, SOPs, and automation.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ EXPERIENCE ============ -->
+		<section class="section" id="experience">
+			<div class="wrap">
+				<div class="section-head center">
+					<p class="kicker">06 — Experience</p>
+					<h2>Career timeline</h2>
+				</div>
+
+				<ol class="timeline">
+					<li class="tl-item reveal">
+						<div class="tl-marker"></div>
+						<div class="tl-card">
+							<header class="tl-head">
+								<div class="tl-logo"><img src="images/hcl.png" alt="HCLTech"></div>
+								<div>
+									<h3>Senior Technical Architect — GenAI Solutions <span class="role-badge">AI</span></h3>
+									<p class="tl-org">HCLTech</p>
+								</div>
+								<span class="tl-date">Sep 2021 — Present</span>
+							</header>
+							<p>Architect of AI-driven engineering platforms, leading GenAI and blockchain solution design for enterprise clients. Own architecture, design patterns, and AI governance from concept to production deployment.</p>
+							<h4>Key achievements</h4>
+							<ul>
+								<li><strong>AI-powered code generation — AIForce D2C:</strong> designed and built an agentic Design-to-Code platform (React, Angular, Next.js, CMS), reducing design-to-code effort from ~3 days to 1 hour. Multi-model orchestration (OpenAI, Claude), RAG over ChromaDB/Pinecone, and autonomous agents with iterative feedback loops; deployed on Azure with a published Figma plugin.</li>
+								<li><strong>Blockchain solution architecture:</strong> evaluated business use cases, selected platforms (Hyperledger Fabric, Ethereum, Corda), and architected solutions integrated into clients' workflows with security, scalability, and compliance built in.</li>
+							</ul>
+							<details>
+								<summary>Key responsibilities</summary>
+								<ul>
+									<li>Define scalable, extensible architecture for AI code-generation platforms — vector-based retrieval, multi-model orchestration, and reusable frameworks for component generation, layout interpretation, and design-token mapping.</li>
+									<li>Establish design patterns and orchestration strategies combining prompt engineering, retrieval, and feedback loops to maximize accuracy and minimize manual coding.</li>
+									<li>Set enterprise-grade standards for generated code (performance, accessibility, maintainability) and standardize workflows across design, development, and CMS ecosystems.</li>
+									<li>Own coding standards, architectural guidelines, and AI usage governance; review system designs for alignment with long-term enterprise architecture goals.</li>
+									<li>Drive adoption of Generative AI, RAG, and agentic systems, and provide strategic direction on AI-led software-engineering transformation.</li>
+								</ul>
+							</details>
+							<ul class="tags"><li>OpenAI</li><li>Claude</li><li>RAG</li><li>LangGraph</li><li>MCP</li><li>Pinecone</li><li>ChromaDB</li><li>Azure</li><li>Hyperledger Fabric</li></ul>
+						</div>
+					</li>
+
+					<li class="tl-item reveal">
+						<div class="tl-marker"></div>
+						<div class="tl-card">
+							<header class="tl-head">
+								<div class="tl-logo"><img src="images/citi.png" alt="Citibank"></div>
+								<div>
+									<h3>Manager <span class="role-badge citi">9 APAC markets</span></h3>
+									<p class="tl-org">Citibank N.A.</p>
+								</div>
+								<span class="tl-date">Aug 2018 — Sep 2021</span>
+							</header>
+							<p>Strategic and technical leader for the content management platform serving 9 APAC countries — Australia, China, Hong Kong, Singapore, Thailand, Malaysia, Vietnam, Philippines, and Indonesia — in a highly regulated banking environment.</p>
+							<h4>Key achievements</h4>
+							<ul>
+								<li>Designed and led the re-architecture of the entire legacy content management codebase into microservices, with shared business logic supporting both legacy SOAP services and new REST APIs.</li>
+								<li>Drove the codebase to <strong>zero SAST and DAST findings</strong>, embedding secure-coding standards and comprehensive code reviews into delivery.</li>
+								<li>Upgraded the complete environment across 9 countries (RHEL, WAS, IHS, database, Documentum, Captiva), coordinating multiple teams to completion.</li>
+							</ul>
+							<details>
+								<summary>Architecture, operations &amp; leadership</summary>
+								<ul>
+									<li>Architected complex, scalable solutions for demanding business requirements across the APAC portfolio.</li>
+									<li>Served as Proxy Product Owner, managing priorities and bridging business and technical teams.</li>
+									<li>Owned periodic upgrades driven by End-of-Vendor-Support and End-of-Life requirements, and coordinated cross-team Disaster Recovery drills.</li>
+									<li>Aligned business, compliance, and infrastructure stakeholders to execute maintenance within mandated change windows.</li>
+									<li>Built and mentored high-performing development teams for critical, time-sensitive projects.</li>
+								</ul>
+							</details>
+							<ul class="tags"><li>Microservices</li><li>REST / SOAP</li><li>Documentum</li><li>Captiva</li><li>AppSec</li><li>DR</li></ul>
+						</div>
+					</li>
+
+					<li class="tl-item reveal">
+						<div class="tl-marker"></div>
+						<div class="tl-card">
+							<header class="tl-head">
+								<div class="tl-logo"><img src="images/hcl.png" alt="HCLTech"></div>
+								<div>
+									<h3>Senior Technical Lead</h3>
+									<p class="tl-org">HCLTech</p>
+								</div>
+								<span class="tl-date">Mar 2013 — Aug 2018</span>
+							</header>
+							<p>Led delivery of enterprise content management projects — requirement gathering, project planning, and onsite-offshore coordination, including extended onsite engagements working directly with clients.</p>
+							<ul>
+								<li>Led Agile delivery — sprint planning, task assignment, and team leadership — with hands-on code reviews, Webtop customization, and scheduled-job creation.</li>
+								<li>Designed a productivity dashboard (ETL, REST API, Angular, Highcharts) tracking work time, idle time, and per-task effort for task-level analysis.</li>
+								<li>As Blockchain Architect and core member of the HCL CoTrust Platform, built MVPs on Hyperledger Fabric (1.0, 0.6) and Ethereum.</li>
+							</ul>
+							<ul class="tags"><li>Agile</li><li>Documentum</li><li>Angular</li><li>Highcharts</li><li>Hyperledger</li><li>Ethereum</li></ul>
+						</div>
+					</li>
+
+					<li class="tl-item reveal">
+						<div class="tl-marker"></div>
+						<div class="tl-card">
+							<header class="tl-head">
+								<div class="tl-logo"><img src="images/polaris.jpg" alt="Polaris FT"></div>
+								<div>
+									<h3>Associate Consultant</h3>
+									<p class="tl-org">Polaris FT</p>
+								</div>
+								<span class="tl-date">Dec 2009 — Mar 2013</span>
+							</header>
+							<p>Delivered an enterprise document workflow solution for Citibank India, implementing EMC Documentum 6.5 SP3 for the Citi Wealth Advisory business.</p>
+							<ul>
+								<li>Built a comprehensive Document Tracking and Data Entry Workflow solution on Documentum.</li>
+								<li>Led integration of a Single Account Opening Form spanning Banking, Credit Card, Personal Loan, and Mortgage products in one unified flow.</li>
+								<li>Designed and developed DFS services and multi-workflow enhancements on the Documentum Framework.</li>
+							</ul>
+							<ul class="tags"><li>Documentum 6.5</li><li>DFS</li><li>Workflow</li></ul>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<!-- ============ SKILLS ============ -->
+		<section class="section section-alt" id="skills">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="kicker">07 — Technical skills</p>
+					<h2>Toolbox</h2>
+				</div>
+				<div class="ai-skills reveal">
+					<div class="ai-skills-head">
+						<span class="pill pill-accent">Primary focus</span>
+						<h3>AI / GenAI Architecture</h3>
+					</div>
+					<div class="ai-skills-cols">
+						<div><h4>LLMs &amp; orchestration</h4><ul class="chips"><li>OpenAI API</li><li>Claude</li><li>Multi-model routing</li><li>Prompt engineering</li></ul></div>
+						<div><h4>Agentic AI</h4><ul class="chips"><li>LangGraph</li><li>MCP</li><li>Autonomous agents</li><li>Feedback loops</li></ul></div>
+						<div><h4>Retrieval</h4><ul class="chips"><li>RAG</li><li>Pinecone</li><li>ChromaDB</li><li>Elasticsearch</li></ul></div>
+						<div><h4>Governance &amp; quality</h4><ul class="chips"><li>AI governance</li><li>Guardrails</li><li>LLM evaluation</li><li>Figma plugin dev</li></ul></div>
+					</div>
+				</div>
+				<div class="skills-grid">
+					<div class="skill-group reveal">
+						<h3>Security &amp; compliance</h3>
+						<ul class="chips"><li>SAST / DAST remediation</li><li>Secure coding</li><li>Disaster Recovery</li><li>EoL upgrades</li><li>ITIL</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Languages</h3>
+						<ul class="chips"><li>Python</li><li>Node.js</li><li>Java</li><li>Go</li><li>JavaScript</li><li>C# .NET</li><li>DFC</li><li>DQL</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Frameworks</h3>
+						<ul class="chips"><li>Express.js</li><li>Spring</li><li>Jersey (JAX-RS)</li><li>Angular</li><li>React</li><li>OAuth</li><li>Highcharts</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Cloud &amp; containers</h3>
+						<ul class="chips"><li>Azure</li><li>AWS</li><li>IBM Cloud</li><li>Docker</li><li>Docker Compose</li><li>Kubernetes</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Blockchain</h3>
+						<ul class="chips"><li>Hyperledger Fabric</li><li>Ethereum</li><li>Corda</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Databases &amp; storage</h3>
+						<ul class="chips"><li>MongoDB</li><li>Cloudant</li><li>Oracle</li><li>SQL Server</li><li>MySQL</li><li>IBM DB2</li><li>Amazon S3</li><li>Centera</li><li>NAS</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Enterprise content</h3>
+						<ul class="chips"><li>Documentum</li><li>Captiva</li><li>Documentum Composer</li><li>Process Builder</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Servers, DevOps &amp; ITSM</h3>
+						<ul class="chips"><li>WebSphere</li><li>WebLogic</li><li>JBoss</li><li>Tomcat</li><li>Git</li><li>SonarQube</li><li>IBM RTC</li><li>ServiceNow</li></ul>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Methods &amp; tools</h3>
+						<ul class="chips"><li>Agile</li><li>Kanban</li><li>Waterfall</li><li>ETL</li><li>ITIL</li><li>VS Code</li><li>Figma plugin dev</li></ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ CREDENTIALS ============ -->
+		<section class="section" id="credentials">
+			<div class="wrap">
+				<div class="section-head center">
+					<p class="kicker">08 — Credentials</p>
+					<h2>Education, certifications &amp; recognition</h2>
+				</div>
+
+				<div class="cred-grid">
+					<div class="cred-col reveal">
+						<h3 class="cred-title">Education</h3>
+						<div class="edu">
+							<img src="images/caltech.png" alt="Caltech CTME">
+							<div>
+								<h4>Post Graduate Program in AI &amp; Machine Learning</h4>
+								<p>Caltech CTME</p>
+							</div>
+						</div>
+						<div class="edu">
+							<img src="images/annauniv.png" alt="Anna University">
+							<div>
+								<h4>B.E., Electronics &amp; Communication Engineering</h4>
+								<p>Anand Institute of Higher Technology, Anna University</p>
+							</div>
+						</div>
+
+						<h3 class="cred-title mt">Awards</h3>
+						<ul class="awards">
+							<li>
+								<span class="award-badge">O∞</span>
+								<div><h4>O-Infinity Award · 2021–2025</h4><p>Outstanding rating for 4 consecutive years at HCLTech.</p></div>
+							</li>
+							<li>
+								<span class="award-badge">O∞</span>
+								<div><h4>O-Infinity Award · 2013–2017</h4><p>Outstanding rating for 4 consecutive years at HCLTech.</p></div>
+							</li>
+							<li>
+								<span class="award-badge gem">GEM</span>
+								<div><h4>Gone Extra Mile Award · 2011</h4><p>Outstanding performance for Citibank on the Auto Fulfillment Unit project at Polaris.</p></div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cred-col reveal">
+						<h3 class="cred-title">Certifications</h3>
+						<div class="badge-row">
+							<img src="images/cert1.jpg" alt="Certification badge" loading="lazy">
+							<img src="images/cert2.png" alt="Certification badge" loading="lazy">
+							<img src="images/cert3.png" alt="Certification badge" loading="lazy">
+							<img src="images/cert4.png" alt="Certification badge" loading="lazy">
+							<img src="images/cert5.png" alt="Certification badge" loading="lazy">
+							<img src="images/cert6.png" alt="Certification badge" loading="lazy">
+						</div>
+						<ul class="cert-list">
+							<li><span>ITIL Foundation</span><em>AXELOS</em></li>
+							<li><span>AWS Cloud Practitioner</span><em>Amazon Web Services</em></li>
+							<li><span>MongoDB SI Associate</span><em>MongoDB</em></li>
+							<li><span>Corda Certified Developer</span><em>R3</em></li>
+							<li><span>Corda for Business Professional</span><em>R3</em></li>
+							<li><span>New Product Development</span><em>IIM Bangalore</em></li>
+							<li><span>Blockchain for Business</span><em>Linux Foundation</em></li>
+							<li><span>Blockchain Essentials</span><em>IBM Blockchain Platform</em></li>
+							<li><span>Developer Foundation</span><em>IBM Blockchain Platform</em></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ CONTACT ============ -->
+		<section class="contact" id="contact">
+			<div class="wrap contact-inner reveal">
+				<p class="kicker light">09 — Contact</p>
+				<h2>Let's build AI that enterprises can trust.</h2>
+				<p>Open to conversations on GenAI architecture, agentic platforms, and AI adoption in regulated industries.</p>
+				<div class="contact-actions">
+					<a class="btn btn-light" href="mailto:karthik.sukumaran@gmail.com">
+						<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+						karthik.sukumaran@gmail.com
+					</a>
+					<a class="btn btn-outline-light" href="https://www.linkedin.com/in/karthiksukumaran06/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="wrap footer-inner">
+			<span>© <span id="year">2026</span> Karthik Sukumaran</span>
+			<a href="#top">Back to top ↑</a>
+		</div>
+	</footer>
+
+	<script src="script.js" defer></script>
 </body>
 </html>
