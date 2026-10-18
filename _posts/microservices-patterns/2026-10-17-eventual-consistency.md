@@ -6,6 +6,10 @@ summary: Data syncs over time instead of instantly.
 category: Distributed transactions
 pattern_no: 6
 tools: [DynamoDB, Cassandra, Riak, CouchDB, Kafka-based replication]
+use_cases:
+  - "Shopping carts and product catalogs"
+  - "Social feeds, likes and counters"
+  - "Search indexes and cross-region replicas"
 tags: [eventual-consistency, cap, pacelc, replication, quorum]
 date: 2026-10-17 09:06:00 +0530
 ---

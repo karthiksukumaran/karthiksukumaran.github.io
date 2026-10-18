@@ -6,6 +6,10 @@ summary: Chain of local transactions with compensations on failure.
 category: Distributed transactions
 pattern_no: 1
 tools: [Temporal, Camunda, Axon, AWS Step Functions]
+use_cases:
+  - "E-commerce checkout: order, payment, stock, shipping"
+  - "Travel booking: flight + hotel + car"
+  - "Loan and account onboarding in banking"
 tags: [saga, compensation, orchestration, choreography, consistency]
 date: 2026-10-17 09:00:00 +0530
 ---

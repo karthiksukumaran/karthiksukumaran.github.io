@@ -6,6 +6,10 @@ summary: Caps how long to wait on a call.
 category: Resilience
 pattern_no: 31
 tools: [HTTP clients, gRPC deadlines, Resilience4j TimeLimiter, Polly Timeout, Envoy route timeouts]
+use_cases:
+  - "Every HTTP and gRPC call between services"
+  - "Database queries in user-facing requests"
+  - "Calls to payment and identity providers"
 tags: [timeout, deadline, latency, deadline-propagation, resilience]
 date: 2026-10-17 09:31:00 +0530
 ---

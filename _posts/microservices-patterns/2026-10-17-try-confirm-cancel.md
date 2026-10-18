@@ -6,6 +6,10 @@ summary: Reserve first, then confirm or cancel.
 category: Distributed transactions
 pattern_no: 4
 tools: [Apache Seata, ByteTCC, Hmily, DTM]
+use_cases:
+  - "Card payments: authorize, then capture or void"
+  - "Flash-sale inventory reservation"
+  - "Wallet top-ups and fund transfers in fintech"
 tags: [tcc, reservation, payments, booking, distributed-transactions]
 date: 2026-10-17 09:04:00 +0530
 ---

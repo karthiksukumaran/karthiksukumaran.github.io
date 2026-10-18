@@ -6,6 +6,10 @@ summary: Stores state as a sequence of events.
 category: Data management
 pattern_no: 21
 tools: [EventStoreDB, Axon, Marten, Kafka (as transport), DynamoDB streams]
+use_cases:
+  - "Banking ledgers and account histories"
+  - "Trading systems and order books"
+  - "Insurance claims and audit-heavy workflows"
 tags: [event-sourcing, events, audit, replay, append-only, cqrs]
 date: 2026-10-17 09:21:00 +0530
 ---

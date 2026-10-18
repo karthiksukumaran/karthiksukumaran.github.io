@@ -6,6 +6,10 @@ summary: Stateful router driving a multi-step workflow.
 category: Distributed transactions
 pattern_no: 8
 tools: [NServiceBus, MassTransit, Axon, Temporal, Spring State Machine]
+use_cases:
+  - "Loan origination and approval"
+  - "Insurance claims processing"
+  - "Customer onboarding and KYC with document deadlines"
 tags: [process-manager, state-machine, workflow, saga, enterprise-integration-patterns]
 date: 2026-10-17 09:08:00 +0530
 ---

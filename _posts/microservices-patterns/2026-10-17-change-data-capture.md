@@ -6,6 +6,10 @@ summary: Turns DB log changes into events.
 category: Reliable messaging
 pattern_no: 12
 tools: [Debezium, AWS DMS, Oracle GoldenGate, Kafka Connect, Google Datastream]
+use_cases:
+  - "Real-time sync to search (Elasticsearch)"
+  - "Streaming operational data into a data warehouse"
+  - "Zero-downtime migration off legacy databases"
 tags: [cdc, debezium, kafka-connect, wal, binlog, replication]
 date: 2026-10-17 09:12:00 +0530
 ---

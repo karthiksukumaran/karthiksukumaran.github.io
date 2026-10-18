@@ -6,6 +6,10 @@ summary: Stores incoming messages before processing to dedupe.
 category: Reliable messaging
 pattern_no: 11
 tools: [NServiceBus, MassTransit, Custom inbox tables, Spring Integration]
+use_cases:
+  - "Payment consumers that must never double-charge"
+  - "Ledger postings from event streams"
+  - "Webhook receivers de-duplicating retries"
 tags: [inbox, deduplication, idempotency, exactly-once, consumers]
 date: 2026-10-17 09:11:00 +0530
 ---

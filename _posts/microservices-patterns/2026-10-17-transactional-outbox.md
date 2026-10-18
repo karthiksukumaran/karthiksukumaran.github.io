@@ -6,6 +6,10 @@ summary: Saves data and event in the same DB transaction.
 category: Reliable messaging
 pattern_no: 10
 tools: [Debezium, Eventuate Tram, NServiceBus Outbox, MassTransit Outbox, Spring Modulith]
+use_cases:
+  - "Publishing OrderPlaced events from an order service"
+  - "Payment events to ledgers and notifications"
+  - "Keeping search indexes and caches in sync"
 tags: [outbox, dual-write, kafka, cdc, at-least-once, events]
 date: 2026-10-17 09:10:00 +0530
 ---

@@ -6,6 +6,10 @@ summary: Stops calling a failing service and fails fast.
 category: Resilience
 pattern_no: 29
 tools: [Resilience4j, Polly, Envoy outlier detection, Istio, Hystrix (legacy)]
+use_cases:
+  - "Checkout calling pricing or recommendation services"
+  - "Integrations with unreliable partner APIs"
+  - "Protecting apps when a database or cache is down"
 tags: [circuit-breaker, fail-fast, resilience, cascading-failure, half-open]
 date: 2026-10-17 09:29:00 +0530
 ---

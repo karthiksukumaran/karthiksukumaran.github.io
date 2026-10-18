@@ -6,6 +6,10 @@ summary: Message carries its own list of steps.
 category: Distributed transactions
 pattern_no: 9
 tools: [MassTransit Courier, Apache Camel routingSlip, Azure Logic Apps]
+use_cases:
+  - "Document pipelines: scan, OCR, classify, archive"
+  - "Payment processing with optional FX conversion"
+  - "Media transcoding pipelines"
 tags: [routing-slip, courier, enterprise-integration-patterns, compensation]
 date: 2026-10-17 09:09:00 +0530
 ---

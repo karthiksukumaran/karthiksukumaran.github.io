@@ -6,6 +6,10 @@ summary: Each service owns a private DB.
 category: Data management
 pattern_no: 19
 tools: [PostgreSQL, MongoDB, DynamoDB, Redis, Polyglot persistence]
+use_cases:
+  - "Microservice platforms where orders, payments and catalog own their data"
+  - "Polyglot persistence: SQL for orders, search engine for catalog"
+  - "Scaling high-traffic services independently"
 tags: [database-per-service, data-ownership, microservices, polyglot-persistence, encapsulation]
 date: 2026-10-17 09:19:00 +0530
 ---

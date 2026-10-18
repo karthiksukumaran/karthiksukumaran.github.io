@@ -6,6 +6,10 @@ summary: Picks one instance to do a task.
 category: Resilience
 pattern_no: 36
 tools: [ZooKeeper, etcd, Kubernetes Lease, Consul sessions, Raft]
+use_cases:
+  - "Scheduled jobs that must run once (statements, reports)"
+  - "A single outbox relay or poller"
+  - "Kubernetes controllers and cluster coordinators"
 tags: [leader-election, lease, fencing-token, consensus, singleton, split-brain]
 date: 2026-10-17 09:36:00 +0530
 ---

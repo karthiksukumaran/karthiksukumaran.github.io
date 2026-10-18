@@ -6,6 +6,10 @@ summary: Undoes a completed step with an opposite action.
 category: Distributed transactions
 pattern_no: 5
 tools: [Refunds, Stock release, Temporal, AWS Step Functions, Camunda]
+use_cases:
+  - "Refunds after a failed order"
+  - "Releasing reserved stock"
+  - "Cancelling hotel or flight bookings"
 tags: [compensation, undo, saga, refunds, consistency]
 date: 2026-10-17 09:05:00 +0530
 ---

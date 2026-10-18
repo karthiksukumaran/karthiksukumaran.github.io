@@ -6,6 +6,10 @@ summary: Producers publish to topics, many subscribers receive.
 category: Integration
 pattern_no: 42
 tools: [Kafka, Google Pub/Sub, Amazon SNS, EventBridge, RabbitMQ fanout, NATS]
+use_cases:
+  - "Broadcasting order events to many services"
+  - "Real-time notifications and alerts"
+  - "Cache invalidation and analytics feeds"
 tags: [pub-sub, topics, fan-out, kafka, sns, subscriptions]
 date: 2026-10-17 09:42:00 +0530
 ---

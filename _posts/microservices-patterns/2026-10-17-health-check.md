@@ -6,6 +6,10 @@ summary: Reports liveness and readiness.
 category: Resilience
 pattern_no: 35
 tools: [Kubernetes probes, Spring Actuator, ASP.NET Core Health Checks, AWS ELB health checks, Consul]
+use_cases:
+  - "Kubernetes liveness, readiness and startup probes"
+  - "Load-balancer target health"
+  - "Zero-downtime deployments and graceful shutdown"
 tags: [health-check, liveness, readiness, startup-probe, kubernetes, actuator]
 date: 2026-10-17 09:35:00 +0530
 ---

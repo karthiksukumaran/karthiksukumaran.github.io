@@ -6,6 +6,10 @@ summary: Manages service-to-service traffic.
 category: Integration
 pattern_no: 48
 tools: [Istio, Linkerd, Consul, Cilium, Kuma]
+use_cases:
+  - "Zero-trust mTLS between services in regulated industries"
+  - "Canary releases and traffic splitting"
+  - "Uniform service-to-service metrics"
 tags: [service-mesh, istio, linkerd, mtls, traffic-management, zero-trust]
 date: 2026-10-17 09:48:00 +0530
 ---

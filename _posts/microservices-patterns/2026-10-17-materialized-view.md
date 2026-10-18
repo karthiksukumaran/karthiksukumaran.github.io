@@ -6,6 +6,10 @@ summary: Precomputed read-optimized view.
 category: Data management
 pattern_no: 24
 tools: [Elasticsearch, Redis, PostgreSQL materialized views, Kafka Streams, ksqlDB]
+use_cases:
+  - "Customer-support \"find any order\" search"
+  - "Real-time sales dashboards and leaderboards"
+  - "Product search across catalog, price and stock"
 tags: [materialized-view, projection, read-model, denormalization, elasticsearch]
 date: 2026-10-17 09:24:00 +0530
 ---

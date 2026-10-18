@@ -6,6 +6,10 @@ summary: Processing a message twice has the same effect as once.
 category: Reliable messaging
 pattern_no: 14
 tools: [Message-ID tracking, Redis SET NX, DynamoDB conditional writes, Stripe idempotency keys]
+use_cases:
+  - "Payment and refund processing"
+  - "Order creation from retried API calls"
+  - "Email and notification sending"
 tags: [idempotency, deduplication, at-least-once, retries, idempotency-key]
 date: 2026-10-17 09:14:00 +0530
 ---

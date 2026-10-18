@@ -6,6 +6,10 @@ summary: Request on one queue, reply on another.
 category: Integration
 pattern_no: 43
 tools: [RabbitMQ, JMS, IBM MQ, Azure Service Bus sessions, HTTP 202 polling]
+use_cases:
+  - "Report and statement generation"
+  - "Credit checks and mainframe requests over MQ"
+  - "Video rendering and long-running exports"
 tags: [request-reply, async, correlation-id, reply-to, 202-accepted, webhooks]
 date: 2026-10-17 09:43:00 +0530
 ---

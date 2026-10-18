@@ -6,6 +6,10 @@ summary: Caps request volume.
 category: Resilience
 pattern_no: 33
 tools: [Nginx, Kong, AWS API Gateway, Envoy, Redis, Cloudflare]
+use_cases:
+  - "Public APIs with plans and quotas"
+  - "Login and OTP endpoints against brute force"
+  - "Staying within partners' API limits"
 tags: [rate-limiting, throttling, token-bucket, 429, quotas, api-gateway]
 date: 2026-10-17 09:33:00 +0530
 ---

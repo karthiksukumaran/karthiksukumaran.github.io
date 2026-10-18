@@ -6,6 +6,10 @@ summary: Gradually replaces a monolith.
 category: Integration
 pattern_no: 46
 tools: [Proxy routing, API gateways, Envoy, NGINX, Feature flags, Debezium]
+use_cases:
+  - "Migrating a monolith to microservices"
+  - "Replacing a legacy banking platform module by module"
+  - "Moving on-premise applications to the cloud"
 tags: [strangler-fig, migration, monolith, modernization, legacy, incremental]
 date: 2026-10-17 09:46:00 +0530
 ---

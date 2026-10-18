@@ -6,6 +6,10 @@ summary: Publishes meaningful business events.
 category: Data management
 pattern_no: 25
 tools: [Kafka topics, Schema Registry, CloudEvents, EventBridge, Spring Modulith]
+use_cases:
+  - "Order lifecycle: placed, shipped, delivered"
+  - "Loan approved triggers disbursement, notifications and CRM"
+  - "Feeding analytics and audit systems"
 tags: [domain-events, ddd, integration-events, kafka, event-design, schema]
 date: 2026-10-17 09:25:00 +0530
 ---

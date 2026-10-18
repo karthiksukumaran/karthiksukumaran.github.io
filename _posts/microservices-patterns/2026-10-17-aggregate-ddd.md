@@ -6,6 +6,10 @@ summary: Cluster of objects forming one consistency boundary.
 category: Data management
 pattern_no: 26
 tools: [DDD-based services, Axon, Spring Data, EF Core, Marten]
+use_cases:
+  - "An order with its order lines"
+  - "A bank account and its balance rules"
+  - "A shopping cart with item limits"
 tags: [aggregate, ddd, invariants, consistency-boundary, domain-model]
 date: 2026-10-17 09:26:00 +0530
 ---

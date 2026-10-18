@@ -6,6 +6,10 @@ summary: Follows a request across services.
 category: Observability
 pattern_no: 50
 tools: [OpenTelemetry, Jaeger, Zipkin, Grafana Tempo, AWS X-Ray, Honeycomb]
+use_cases:
+  - "Debugging slow checkout or payment flows"
+  - "Finding the failing service in a call chain"
+  - "Mapping real service dependencies"
 tags: [distributed-tracing, opentelemetry, spans, sampling, jaeger, observability]
 date: 2026-10-17 09:50:00 +0530
 ---

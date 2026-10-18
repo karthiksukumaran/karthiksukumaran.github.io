@@ -37,7 +37,9 @@ date: 2026-10-20 10:00:00 +0530
 # Optional:
 # short: Shorter title for cards
 # summary: "What it does" line (shown in a box at the top)
-# tools: [Tool A, Tool B]
+# use_cases:                     # shown as "Popular use cases" in the same box
+#   - "First real-world use case"
+#   - "Second real-world use case"
 ---
 ```
 

@@ -6,6 +6,10 @@ summary: Services find each other dynamically.
 category: Integration
 pattern_no: 49
 tools: [Consul, Eureka, Kubernetes DNS, AWS Cloud Map, etcd, Envoy xDS]
+use_cases:
+  - "Kubernetes services finding each other by name"
+  - "Autoscaled instances behind load balancers"
+  - "Hybrid VM and container estates (Consul)"
 tags: [service-discovery, registry, kubernetes-dns, consul, eureka, load-balancing]
 date: 2026-10-17 09:49:00 +0530
 ---

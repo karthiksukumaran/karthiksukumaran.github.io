@@ -6,6 +6,10 @@ summary: A central coordinator directs services.
 category: Integration
 pattern_no: 41
 tools: [Temporal, AWS Step Functions, Camunda, Azure Durable Functions, Netflix Conductor]
+use_cases:
+  - "Mortgage and loan approval workflows"
+  - "Customer onboarding with human approvals"
+  - "Long-running order fulfilment with timeouts"
 tags: [orchestration, workflow, durable-execution, temporal, step-functions, bpmn]
 date: 2026-10-17 09:41:00 +0530
 ---

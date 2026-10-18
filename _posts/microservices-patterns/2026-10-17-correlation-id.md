@@ -6,6 +6,10 @@ summary: One ID tracks a flow across services.
 category: Integration
 pattern_no: 44
 tools: [OpenTelemetry, W3C Trace Context, Custom headers, SLF4J MDC, Serilog enrichers]
+use_cases:
+  - "Tracing a customer's failed payment across services"
+  - "Support tickets that quote a reference ID"
+  - "Linking logs across queues and async jobs"
 tags: [correlation-id, traceparent, logging, mdc, observability, propagation]
 date: 2026-10-17 09:44:00 +0530
 ---

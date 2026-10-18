@@ -6,6 +6,10 @@ summary: Allows one process at a time on a resource.
 category: Resilience
 pattern_no: 37
 tools: [Redis Redlock, ZooKeeper, etcd, PostgreSQL advisory locks, ShedLock]
+use_cases:
+  - "Preventing duplicate processing of the same file or account"
+  - "Database migrations started from many replicas"
+  - "Cache rebuilds and scheduled jobs (ShedLock)"
 tags: [distributed-lock, mutual-exclusion, redlock, fencing-token, advisory-lock]
 date: 2026-10-17 09:37:00 +0530
 ---

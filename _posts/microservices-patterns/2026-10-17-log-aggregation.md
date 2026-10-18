@@ -6,6 +6,10 @@ summary: Centralizes logs.
 category: Observability
 pattern_no: 51
 tools: [ELK, Loki, Splunk, Fluent Bit, OpenTelemetry Collector, OpenSearch]
+use_cases:
+  - "Incident investigation across many pods"
+  - "Security and compliance log retention"
+  - "Searching logs by correlation ID"
 tags: [log-aggregation, structured-logging, elk, loki, fluent-bit, observability]
 date: 2026-10-17 09:51:00 +0530
 ---

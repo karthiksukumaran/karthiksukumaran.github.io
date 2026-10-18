@@ -6,6 +6,10 @@ summary: Coordinator runs prepare, then commit or abort across all participants.
 category: Distributed transactions
 pattern_no: 2
 tools: [XA transactions, Atomikos, Narayana, Bitronix, PostgreSQL PREPARE TRANSACTION]
+use_cases:
+  - "Transfers between two databases in one banking service"
+  - "Database + IBM MQ updates in legacy core systems (XA)"
+  - "Cross-shard transactions inside distributed SQL (Spanner, CockroachDB)"
 tags: [2pc, xa, atomic-commit, coordinator, jta]
 date: 2026-10-17 09:02:00 +0530
 ---

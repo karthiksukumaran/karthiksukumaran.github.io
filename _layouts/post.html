@@ -46,7 +46,7 @@ body_class: post-page
 	</aside>
 
 	<article class="post-body">
-		{% if page.summary or page.tools %}
+		{% if page.summary or page.use_cases %}
 		<div class="glance">
 			{% if page.summary %}
 			<div class="glance-row">
@@ -54,10 +54,10 @@ body_class: post-page
 				<span>{{ page.summary }}</span>
 			</div>
 			{% endif %}
-			{% if page.tools %}
+			{% if page.use_cases %}
 			<div class="glance-row">
-				<span class="glance-label">Example tools</span>
-				<span class="glance-tools">{% for t in page.tools %}<span>{{ t }}</span>{% endfor %}</span>
+				<span class="glance-label">Popular use cases</span>
+				<ul class="glance-uses">{% for u in page.use_cases %}<li>{{ u }}</li>{% endfor %}</ul>
 			</div>
 			{% endif %}
 		</div>

@@ -6,6 +6,10 @@ summary: Services share one DB (often an anti-pattern).
 category: Data management
 pattern_no: 20
 tools: [Legacy systems, Oracle, SQL Server, IBM Db2, Database views]
+use_cases:
+  - "Legacy enterprise and mainframe estates"
+  - "Modular monoliths with a schema per module"
+  - "Transitional state during a microservice migration"
 tags: [shared-database, anti-pattern, coupling, legacy, migration]
 date: 2026-10-17 09:20:00 +0530
 ---

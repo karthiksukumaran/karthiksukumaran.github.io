@@ -6,6 +6,10 @@ summary: Returns a default or cached response on failure.
 category: Resilience
 pattern_no: 32
 tools: [Resilience4j, Polly, Spring Cloud CircuitBreaker, CDN stale-if-error, Feature flags]
+use_cases:
+  - "Showing bestsellers when recommendations are down"
+  - "Serving cached exchange rates or prices"
+  - "Hiding optional widgets such as reviews and promotions"
 tags: [fallback, graceful-degradation, cache, default-response, resilience]
 date: 2026-10-17 09:32:00 +0530
 ---

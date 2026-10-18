@@ -6,6 +6,10 @@ summary: Persists messages until acknowledged.
 category: Reliable messaging
 pattern_no: 16
 tools: [RabbitMQ, Kafka, IBM MQ, Amazon SQS, Azure Service Bus]
+use_cases:
+  - "Payment and trade messages between banking systems"
+  - "Order events that must reach fulfilment"
+  - "Audit and compliance event streams"
 tags: [guaranteed-delivery, durability, acks, publisher-confirms, replication]
 date: 2026-10-17 09:16:00 +0530
 ---

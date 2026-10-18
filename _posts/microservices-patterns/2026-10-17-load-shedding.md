@@ -6,6 +6,10 @@ summary: Drops low-priority work under load.
 category: Resilience
 pattern_no: 34
 tools: [Envoy, Custom logic, Netflix concurrency-limits, Kubernetes priority, Feature flags]
+use_cases:
+  - "Flash sales and ticket launches"
+  - "Black Friday traffic spikes"
+  - "Protecting checkout and login during incidents"
 tags: [load-shedding, overload, priority, adaptive-concurrency, brownout]
 date: 2026-10-17 09:34:00 +0530
 ---

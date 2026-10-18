@@ -6,6 +6,10 @@ summary: Saves state periodically to avoid full event replay.
 category: Data management
 pattern_no: 27
 tools: [EventStoreDB, Axon, Marten, Akka Persistence, Custom snapshot tables]
+use_cases:
+  - "Long-lived accounts in event-sourced ledgers"
+  - "IoT devices with millions of readings"
+  - "Long-running subscriptions and workflows"
 tags: [snapshot, event-sourcing, performance, replay, aggregates]
 date: 2026-10-17 09:27:00 +0530
 ---

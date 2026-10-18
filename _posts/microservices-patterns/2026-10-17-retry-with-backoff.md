@@ -6,6 +6,10 @@ summary: Retries with growing delays plus jitter.
 category: Resilience
 pattern_no: 28
 tools: [Resilience4j, Polly, AWS SDK retry modes, gRPC retry policy, Spring Retry]
+use_cases:
+  - "Calls to payment gateways and third-party APIs"
+  - "Cloud SDK calls hitting throttling limits"
+  - "Recovering from database deadlocks and failovers"
 tags: [retry, exponential-backoff, jitter, transient-faults, retry-budget]
 date: 2026-10-17 09:28:00 +0530
 ---

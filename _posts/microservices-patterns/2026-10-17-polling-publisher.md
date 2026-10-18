@@ -6,6 +6,10 @@ summary: Periodically reads the outbox and publishes.
 category: Reliable messaging
 pattern_no: 13
 tools: [Custom schedulers, Spring @Scheduled, Quartz, Hangfire, Kubernetes CronJob]
+use_cases:
+  - "Outbox relays in small and mid-sized services"
+  - "Scheduled event publishing from a database"
+  - "Teams without Kafka Connect or CDC infrastructure"
 tags: [polling-publisher, outbox, relay, skip-locked, batching]
 date: 2026-10-17 09:13:00 +0530
 ---

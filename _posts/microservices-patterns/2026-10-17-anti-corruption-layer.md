@@ -6,6 +6,10 @@ summary: Translates a legacy or external model.
 category: Integration
 pattern_no: 45
 tools: [Adapter services, Apache Camel, MapStruct, Spring Integration, iPaaS]
+use_cases:
+  - "Integrating with core-banking and mainframe systems"
+  - "Wrapping SaaS CRMs and ERPs"
+  - "Shielding new services during a legacy migration"
 tags: [anti-corruption-layer, ddd, legacy, adapter, translation, integration]
 date: 2026-10-17 09:45:00 +0530
 ---

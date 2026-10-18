@@ -6,6 +6,10 @@ summary: Tracks latency, errors, throughput.
 category: Observability
 pattern_no: 52
 tools: [Prometheus, Grafana, Micrometer, OpenTelemetry Metrics, Datadog]
+use_cases:
+  - "SLO dashboards and burn-rate alerts"
+  - "Capacity planning and autoscaling"
+  - "Business KPIs such as orders per minute"
 tags: [metrics, prometheus, grafana, red-method, slo, histograms, alerting]
 date: 2026-10-17 09:52:00 +0530
 ---

@@ -6,6 +6,10 @@ summary: Single entry point for clients.
 category: Integration
 pattern_no: 38
 tools: [Kong, AWS API Gateway, Apigee, Azure API Management, Envoy Gateway, Spring Cloud Gateway]
+use_cases:
+  - "One public entry point for web and mobile apps"
+  - "Partner APIs with keys, quotas and analytics"
+  - "Canary releases and API versioning"
 tags: [api-gateway, edge, routing, authentication, rate-limiting, north-south]
 date: 2026-10-17 09:38:00 +0530
 ---

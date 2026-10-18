@@ -6,6 +6,10 @@ summary: Multiple workers share one queue.
 category: Reliable messaging
 pattern_no: 17
 tools: [Amazon SQS, RabbitMQ, Kafka consumer groups, Azure Service Bus, KEDA]
+use_cases:
+  - "Image and document processing (OCR, thumbnails)"
+  - "Bulk email and notification sending"
+  - "Month-end statement generation"
 tags: [competing-consumers, scaling, work-queue, consumer-groups, autoscaling]
 date: 2026-10-17 09:17:00 +0530
 ---

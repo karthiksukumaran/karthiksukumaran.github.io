@@ -6,6 +6,10 @@ summary: Temporarily holds a resource with an expiry.
 category: Distributed transactions
 pattern_no: 7
 tools: [Seat booking, Cart holds, Redis TTL keys, Payment authorizations, DynamoDB TTL]
+use_cases:
+  - "Cinema, event and airline seat holds"
+  - "Hotel room holds during checkout"
+  - "Payment authorizations before capture"
 tags: [reservation, hold, ttl, inventory, booking, overselling]
 date: 2026-10-17 09:07:00 +0530
 ---

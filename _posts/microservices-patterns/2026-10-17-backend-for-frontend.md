@@ -6,6 +6,10 @@ summary: Separate gateway per client type.
 category: Integration
 pattern_no: 39
 tools: [Node.js BFFs, GraphQL, Netflix, SoundCloud, Next.js route handlers, Duende BFF]
+use_cases:
+  - "Mobile apps that need fewer, smaller calls"
+  - "Web SPAs keeping OAuth tokens on the server"
+  - "Different experiences for web, mobile and TV"
 tags: [bff, backend-for-frontend, mobile, web, api-design, oauth]
 date: 2026-10-17 09:39:00 +0530
 ---

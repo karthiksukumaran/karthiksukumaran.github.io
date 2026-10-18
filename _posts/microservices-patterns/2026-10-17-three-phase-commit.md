@@ -6,6 +6,10 @@ summary: Adds a pre-commit phase to reduce 2PC blocking.
 category: Distributed transactions
 pattern_no: 3
 tools: [Mostly academic, Paxos Commit, Raft-replicated coordinators]
+use_cases:
+  - "Teaching and research on atomic-commit protocols"
+  - "Design reviews comparing commit strategies"
+  - "Foundation for consensus-based commit (Paxos Commit)"
 tags: [3pc, atomic-commit, consensus, blocking, fault-tolerance]
 date: 2026-10-17 09:03:00 +0530
 ---

@@ -6,6 +6,10 @@ summary: Merges data from multiple services for a query.
 category: Data management
 pattern_no: 23
 tools: [GraphQL federation, Apollo Router, Netflix DGS, API Gateway aggregation, BFF]
+use_cases:
+  - "Order-details pages combining several services"
+  - "Mobile app home screens"
+  - "GraphQL federation gateways"
 tags: [api-composition, aggregation, graphql, federation, fan-out]
 date: 2026-10-17 09:23:00 +0530
 ---

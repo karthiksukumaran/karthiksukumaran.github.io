@@ -6,6 +6,10 @@ summary: Services coordinate by reacting to events.
 category: Integration
 pattern_no: 40
 tools: [Kafka, EventBridge, RabbitMQ, Google Pub/Sub, Azure Service Bus topics]
+use_cases:
+  - "Order placed, then payment, inventory and shipping react"
+  - "Sending notifications on business events"
+  - "Adding loyalty points or analytics as new consumers"
 tags: [choreography, event-driven, decoupling, saga, pub-sub]
 date: 2026-10-17 09:40:00 +0530
 ---

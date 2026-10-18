@@ -6,6 +6,10 @@ summary: Sends a reference instead of a large payload.
 category: Reliable messaging
 pattern_no: 18
 tools: [S3 plus a queue, Azure Blob + Service Bus, GCS + Pub/Sub, Kafka with object storage]
+use_cases:
+  - "KYC document uploads (ID scans, PDFs)"
+  - "Medical images and insurance-claim attachments"
+  - "Large data files and media pipelines"
 tags: [claim-check, large-messages, s3, object-storage, payload-size]
 date: 2026-10-17 09:18:00 +0530
 ---

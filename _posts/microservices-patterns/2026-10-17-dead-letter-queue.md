@@ -6,6 +6,10 @@ summary: Parks messages that keep failing.
 category: Reliable messaging
 pattern_no: 15
 tools: [Amazon SQS, RabbitMQ, Kafka, Azure Service Bus, Google Pub/Sub]
+use_cases:
+  - "Malformed or unexpected order events"
+  - "Failures calling partner APIs"
+  - "Poison messages blocking an ordered queue"
 tags: [dlq, poison-message, retries, redrive, error-handling]
 date: 2026-10-17 09:15:00 +0530
 ---

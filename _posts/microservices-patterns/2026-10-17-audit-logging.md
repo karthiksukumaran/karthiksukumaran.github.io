@@ -6,6 +6,10 @@ summary: Records who did what and when.
 category: Observability
 pattern_no: 53
 tools: [Event stores, SIEM tools, Splunk, Microsoft Sentinel, AWS CloudTrail, S3 Object Lock]
+use_cases:
+  - "Banking and payments compliance: who changed what"
+  - "Access to customers' personal data"
+  - "Admin and production configuration changes"
 tags: [audit-logging, compliance, siem, tamper-evident, security, governance]
 date: 2026-10-17 09:53:00 +0530
 ---
