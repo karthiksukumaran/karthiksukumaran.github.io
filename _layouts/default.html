@@ -3,7 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% seo %}
+	{% comment %} Concise <title> for search results; the full headline is still used for og:title and the page H1 {% endcomment %}
+	{% if page.layout == 'post' and page.short %}
+		{% if page.short.size > 20 %}{% capture seo_title %}{{ page.short }} Pattern | Karthik Sukumaran{% endcapture %}
+		{% else %}{% capture seo_title %}{{ page.short }} Pattern Explained | Karthik Sukumaran{% endcapture %}{% endif %}
+	{% elsif page.layout == 'post' %}
+		{% capture seo_title %}{{ page.title }} | Karthik Sukumaran{% endcapture %}
+	{% elsif page.layout == 'category' %}
+		{% capture seo_title %}{{ page.title }} Patterns | Architecture Notes{% endcapture %}
+	{% elsif page.url == '/' %}
+		{% capture seo_title %}Microservices Patterns Guide | Karthik Sukumaran{% endcapture %}
+	{% else %}
+		{% capture seo_title %}{{ page.title | default: site.title }} | Karthik Sukumaran{% endcapture %}
+	{% endif %}
+	<title>{{ seo_title | strip }}</title>
+	{% seo title=false %}
 	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#0f141a" media="(prefers-color-scheme: dark)">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +40,7 @@
 	<header class="site-header">
 		<div class="wrap header-inner">
 			<a href="{{ '/profile/' | relative_url }}" class="brand" title="Karthik Sukumaran — profile">
-				<img src="{{ '/images/profile.png' | relative_url }}" alt="" width="32" height="32">
+				<img src="{{ '/images/avatar-128.jpg' | relative_url }}" alt="" width="32" height="32">
 				<span>Karthik Sukumaran</span>
 			</a>
 			<div class="header-actions">

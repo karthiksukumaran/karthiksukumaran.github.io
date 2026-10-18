@@ -1,7 +1,8 @@
 ---
 title: "Event Sourcing: Store What Happened, Derive What Is"
 short: Event Sourcing
-description: How event sourcing persists every state change as an immutable event, rebuilds state by replay, enables audit and time travel — plus concurrency, schema evolution, GDPR, and when not to use it.
+description: "Event Sourcing pattern explained: stores state as a sequence of events. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How event sourcing persists every state change as an immutable event, rebuilds state by replay, enables audit and time travel — plus concurrency, schema evolution, GDPR, and when not to use it.
 summary: Stores state as a sequence of events.
 category: Data management
 pattern_no: 21

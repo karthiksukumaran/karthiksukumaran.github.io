@@ -1,7 +1,8 @@
 ---
 title: "Async Request-Reply: Asking a Question Over a Queue"
 short: Async Request-Reply
-description: How to send a request on one channel and receive the reply on another — reply-to queues and correlation IDs in RabbitMQ and JMS, the HTTP 202 + status-polling variant, callbacks and webhooks, and timeout handling.
+description: "Async Request-Reply pattern explained: request on one queue, reply on another. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to send a request on one channel and receive the reply on another — reply-to queues and correlation IDs in RabbitMQ and JMS, the HTTP 202 + status-polling variant, callbacks and webhooks, and timeout handling.
 summary: Request on one queue, reply on another.
 category: Integration
 pattern_no: 43

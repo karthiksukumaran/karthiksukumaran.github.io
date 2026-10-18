@@ -1,7 +1,8 @@
 ---
 title: "Audit Logging: Recording Who Did What, When, and Why"
 short: Audit Logging
-description: How to design trustworthy audit trails in distributed systems — what to capture, event schemas, capturing via outbox or event stores, tamper evidence with hash chains and WORM storage, SIEM integration, and privacy.
+description: "Audit Logging pattern explained: records who did what and when. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to design trustworthy audit trails in distributed systems — what to capture, event schemas, capturing via outbox or event stores, tamper evidence with hash chains and WORM storage, SIEM integration, and privacy.
 summary: Records who did what and when.
 category: Observability
 pattern_no: 53

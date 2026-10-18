@@ -1,7 +1,8 @@
 ---
 title: "Materialized View: Precompute the Answers to Your Hardest Queries"
 short: Materialized View
-description: How to keep precomputed, read-optimized views across services — in-database materialized views, event-fed projections in Elasticsearch and Redis, rebuilds, freshness, and correctness.
+description: "Materialized View pattern explained: precomputed read-optimized view. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to keep precomputed, read-optimized views across services — in-database materialized views, event-fed projections in Elasticsearch and Redis, rebuilds, freshness, and correctness.
 summary: Precomputed read-optimized view.
 category: Data management
 pattern_no: 24

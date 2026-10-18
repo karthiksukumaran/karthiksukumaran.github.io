@@ -1,7 +1,8 @@
 ---
 title: "Rate Limiting and Throttling: Capping Request Volume Fairly"
 short: Rate Limiting / Throttling
-description: How token bucket, leaky bucket, fixed and sliding window limiters work; where to enforce limits (edge, gateway, service); distributed limiting with Redis; and communicating limits with 429 and RateLimit headers.
+description: "Rate Limiting / Throttling pattern explained: caps request volume. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How token bucket, leaky bucket, fixed and sliding window limiters work; where to enforce limits (edge, gateway, service); distributed limiting with Redis; and communicating limits with 429 and RateLimit headers.
 summary: Caps request volume.
 category: Resilience
 pattern_no: 33

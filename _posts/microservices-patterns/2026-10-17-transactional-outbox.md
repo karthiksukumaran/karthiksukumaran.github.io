@@ -1,7 +1,8 @@
 ---
 title: "Transactional Outbox: Never Lose an Event, Never Publish a Lie"
 short: Transactional Outbox
-description: How to save business data and the event that describes it in one database transaction, then relay it to Kafka or a queue — solving the dual-write problem with polling or CDC.
+description: "Transactional Outbox pattern explained: saves data and event in the same DB transaction. Diagrams, code, trade-offs and pitfalls."
+dek: How to save business data and the event that describes it in one database transaction, then relay it to Kafka or a queue — solving the dual-write problem with polling or CDC.
 summary: Saves data and event in the same DB transaction.
 category: Reliable messaging
 pattern_no: 10

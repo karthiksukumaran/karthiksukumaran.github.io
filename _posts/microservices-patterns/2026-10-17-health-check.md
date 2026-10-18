@@ -1,7 +1,8 @@
 ---
 title: "Health Check: Liveness, Readiness, and Startup Done Right"
 short: Health Check
-description: How services report whether they're alive and ready for traffic — Kubernetes liveness, readiness, and startup probes, Spring Boot Actuator health groups, deep vs. shallow checks, and the mistakes that turn probes into outages.
+description: "Health Check pattern explained: reports liveness and readiness. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How services report whether they're alive and ready for traffic — Kubernetes liveness, readiness, and startup probes, Spring Boot Actuator health groups, deep vs. shallow checks, and the mistakes that turn probes into outages.
 summary: Reports liveness and readiness.
 category: Resilience
 pattern_no: 35

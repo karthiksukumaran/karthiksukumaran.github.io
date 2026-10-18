@@ -1,7 +1,8 @@
 ---
 title: "Two-Phase Commit (2PC): Atomic Commits Across Databases"
 short: Two-Phase Commit (2PC)
-description: How a coordinator gets several databases to commit or abort as one — the protocol, XA in practice, why it blocks, and where it still belongs in a microservices world.
+description: "Two-Phase Commit (2PC) pattern explained: coordinator runs prepare, then commit or abort across all participants. Diagrams, code, trade-offs and pitfalls."
+dek: How a coordinator gets several databases to commit or abort as one — the protocol, XA in practice, why it blocks, and where it still belongs in a microservices world.
 summary: Coordinator runs prepare, then commit or abort across all participants.
 category: Distributed transactions
 pattern_no: 2

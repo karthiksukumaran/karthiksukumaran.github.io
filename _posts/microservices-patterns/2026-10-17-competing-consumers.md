@@ -1,7 +1,8 @@
 ---
 title: "Competing Consumers: Scaling Work Across a Pool of Workers"
 short: Competing Consumers
-description: How multiple workers share one queue to scale throughput and survive failures — prefetch, visibility timeouts, Kafka consumer groups, ordering constraints, and autoscaling on queue depth.
+description: "Competing Consumers pattern explained: multiple workers share one queue. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How multiple workers share one queue to scale throughput and survive failures — prefetch, visibility timeouts, Kafka consumer groups, ordering constraints, and autoscaling on queue depth.
 summary: Multiple workers share one queue.
 category: Reliable messaging
 pattern_no: 17

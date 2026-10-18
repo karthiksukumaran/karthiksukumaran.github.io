@@ -1,7 +1,8 @@
 ---
 title: "Distributed Lock: Mutual Exclusion Across Processes"
 short: Distributed Lock
-description: How to let only one process at a time work on a resource across many machines — efficiency vs. correctness locks, Redis SET NX and Redlock, ZooKeeper and etcd locks, database advisory locks, and fencing tokens.
+description: "Distributed Lock pattern explained: allows one process at a time on a resource. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to let only one process at a time work on a resource across many machines — efficiency vs. correctness locks, Redis SET NX and Redlock, ZooKeeper and etcd locks, database advisory locks, and fencing tokens.
 summary: Allows one process at a time on a resource.
 category: Resilience
 pattern_no: 37

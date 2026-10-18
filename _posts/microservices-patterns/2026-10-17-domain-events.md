@@ -1,7 +1,8 @@
 ---
 title: "Domain Events: Publishing What the Business Cares About"
 short: Domain Events
-description: How to model, name, and publish meaningful business events — internal vs. integration events, event design, schemas and versioning, Kafka topic strategy, and reliable publication.
+description: "Domain Events pattern explained: publishes meaningful business events. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to model, name, and publish meaningful business events — internal vs. integration events, event design, schemas and versioning, Kafka topic strategy, and reliable publication.
 summary: Publishes meaningful business events.
 category: Data management
 pattern_no: 25

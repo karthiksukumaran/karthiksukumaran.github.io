@@ -1,7 +1,8 @@
 ---
 title: "Application Metrics: Measuring Latency, Errors, and Throughput"
 short: Application Metrics
-description: How to instrument services with counters, gauges, and histograms — RED and USE methods, golden signals, Prometheus and Micrometer examples, SLOs and burn-rate alerts, and avoiding cardinality explosions.
+description: "Application Metrics pattern explained: tracks latency, errors, throughput. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to instrument services with counters, gauges, and histograms — RED and USE methods, golden signals, Prometheus and Micrometer examples, SLOs and burn-rate alerts, and avoiding cardinality explosions.
 summary: Tracks latency, errors, throughput.
 category: Observability
 pattern_no: 52

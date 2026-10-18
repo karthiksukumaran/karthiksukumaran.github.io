@@ -1,7 +1,8 @@
 ---
 title: "Correlation ID: One Identifier to Follow a Request Everywhere"
 short: Correlation ID
-description: How a single ID propagated through HTTP headers, message metadata, and logs ties together everything that happened for one request or business transaction — W3C traceparent, MDC logging, and propagation across async hops.
+description: "Correlation ID pattern explained: one ID tracks a flow across services. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a single ID propagated through HTTP headers, message metadata, and logs ties together everything that happened for one request or business transaction — W3C traceparent, MDC logging, and propagation across async hops.
 summary: One ID tracks a flow across services.
 category: Integration
 pattern_no: 44

@@ -1,7 +1,8 @@
 ---
 title: "Retry with Backoff and Jitter: Recovering Without Stampeding"
 short: Retry with Backoff
-description: How to retry transient failures safely — exponential backoff, full jitter, retry budgets, which errors to retry, idempotency requirements, and Resilience4j and Polly configurations.
+description: "Retry with Backoff pattern explained: retries with growing delays plus jitter. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to retry transient failures safely — exponential backoff, full jitter, retry budgets, which errors to retry, idempotency requirements, and Resilience4j and Polly configurations.
 summary: Retries with growing delays plus jitter.
 category: Resilience
 pattern_no: 28

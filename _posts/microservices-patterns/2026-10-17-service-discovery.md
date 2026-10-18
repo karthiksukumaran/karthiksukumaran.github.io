@@ -1,7 +1,8 @@
 ---
 title: "Service Discovery: How Services Find Each Other"
 short: Service Discovery
-description: How dynamic environments locate healthy service instances — client-side vs. server-side discovery, registries like Consul and Eureka, Kubernetes Services and DNS, health integration, and caching pitfalls.
+description: "Service Discovery pattern explained: services find each other dynamically. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How dynamic environments locate healthy service instances — client-side vs. server-side discovery, registries like Consul and Eureka, Kubernetes Services and DNS, health integration, and caching pitfalls.
 summary: Services find each other dynamically.
 category: Integration
 pattern_no: 49

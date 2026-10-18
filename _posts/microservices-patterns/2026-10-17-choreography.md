@@ -1,7 +1,8 @@
 ---
 title: "Choreography: Services That Coordinate by Reacting to Events"
 short: Choreography
-description: How event-driven choreography lets services cooperate without a central coordinator — designing event flows, handling failures and compensations, making the implicit flow visible, and knowing when to switch to orchestration.
+description: "Choreography pattern explained: services coordinate by reacting to events. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How event-driven choreography lets services cooperate without a central coordinator — designing event flows, handling failures and compensations, making the implicit flow visible, and knowing when to switch to orchestration.
 summary: Services coordinate by reacting to events.
 category: Integration
 pattern_no: 40

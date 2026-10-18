@@ -9,13 +9,46 @@ permalink: /profile/
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Karthik Sukumaran — AI &amp; GenAI Solutions Architect</title>
-	<meta name="description" content="Karthik Sukumaran — AI & GenAI Solutions Architect with 16+ years architecting enterprise platforms for global banks. Taking enterprise AI from concept to governed production.">
+	<meta name="description" content="AI & GenAI Solutions Architect with 16+ years architecting enterprise platforms for global banks — taking enterprise AI from concept to governed production.">
 	<meta name="author" content="Karthik Sukumaran">
 	<meta property="og:title" content="Karthik Sukumaran — AI & GenAI Solutions Architect">
 	<meta property="og:description" content="Taking enterprise AI from concept to governed production — 16+ years architecting platforms for Citibank APAC, Citibank India, and USAA.">
 	<meta property="og:type" content="profile">
 	<meta property="og:url" content="https://karthiksukumaran.com/profile/">
-	<meta property="og:image" content="https://karthiksukumaran.com/images/profile.png">
+	<meta property="og:image" content="https://karthiksukumaran.com/images/social-profile.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Karthik Sukumaran — AI & GenAI Solutions Architect">
+	<meta property="og:site_name" content="Karthik Sukumaran">
+	<meta property="og:locale" content="en_IN">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Karthik Sukumaran — AI & GenAI Solutions Architect">
+	<meta name="twitter:description" content="Taking enterprise AI from concept to governed production — 16+ years architecting platforms for Citibank APAC, Citibank India, and USAA.">
+	<meta name="twitter:image" content="https://karthiksukumaran.com/images/social-profile.jpg">
+	<link rel="canonical" href="https://karthiksukumaran.com/profile/">
+	<link rel="alternate" type="application/rss+xml" title="Architecture Notes" href="/feed.xml">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "ProfilePage",
+		"url": "https://karthiksukumaran.com/profile/",
+		"mainEntity": {
+			"@type": "Person",
+			"name": "Karthik Sukumaran",
+			"jobTitle": "AI & GenAI Solutions Architect",
+			"description": "AI and GenAI Solutions Architect with 16+ years architecting enterprise platforms for global financial clients.",
+			"url": "https://karthiksukumaran.com/profile/",
+			"image": "https://karthiksukumaran.com/images/profile-800.jpg",
+			"worksFor": { "@type": "Organization", "name": "HCLTech" },
+			"alumniOf": [
+				{ "@type": "EducationalOrganization", "name": "Caltech CTME" },
+				{ "@type": "CollegeOrUniversity", "name": "Anna University" }
+			],
+			"knowsAbout": ["Generative AI", "Large language models", "Retrieval-augmented generation", "Agentic AI", "Microservices architecture", "Enterprise architecture", "Blockchain", "Enterprise content management"],
+			"sameAs": ["https://www.linkedin.com/in/karthiksukumaran06/"]
+		}
+	}
+	</script>
 	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#0b0c0e" media="(prefers-color-scheme: dark)">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +70,7 @@ permalink: /profile/
 	<header class="nav" id="nav">
 		<div class="wrap nav-inner">
 			<a href="#top" class="brand" aria-label="Karthik Sukumaran — top of page">
-				<img src="/images/profile.png" alt="" width="30" height="30">
+				<img src="/images/avatar-128.jpg" alt="" width="30" height="30">
 				<span>Karthik Sukumaran</span>
 			</a>
 			<nav class="nav-links" id="navLinks" aria-label="Primary">
@@ -79,7 +112,7 @@ permalink: /profile/
 					</div>
 				</div>
 				<figure class="portrait">
-					<img src="/images/profile.png" alt="Portrait of Karthik Sukumaran" width="917" height="948">
+					<img src="/images/profile-800.jpg" alt="Portrait of Karthik Sukumaran" width="800" height="827" fetchpriority="high">
 					<figcaption>
 						<img src="/images/caltech.png" alt="" width="28" height="28">
 						<span><strong>Caltech CTME</strong>Post Graduate Program in AI &amp; Machine Learning</span>
@@ -320,7 +353,7 @@ permalink: /profile/
 					<a class="post" href="{{ p.url }}">
 						<span class="post-cat">{{ p.category }}</span>
 						<h3>{{ p.short | default: p.title }}</h3>
-						<p>{{ p.description }}</p>
+						<p>{{ p.dek | default: p.description }}</p>
 						<span class="text-link">Read →</span>
 					</a>
 					{% endif %}

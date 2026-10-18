@@ -27,10 +27,10 @@ body_class: post-page
 			{% if page.series %}<span class="res-tag">{{ page.series | downcase }}</span>{% endif %}
 		</p>
 		<h1>{{ page.title }}</h1>
-		{% if page.description %}<p class="hero-sub">{{ page.description }}</p>{% endif %}
+		{% assign dek = page.dek | default: page.description %}{% if dek %}<p class="hero-sub">{{ dek }}</p>{% endif %}
 		<div class="post-meta">
 			<a class="byline" href="{{ '/profile/' | relative_url }}">
-				<img src="{{ '/images/profile.png' | relative_url }}" alt="" width="40" height="40">
+				<img src="{{ '/images/avatar-128.jpg' | relative_url }}" alt="" width="40" height="40">
 				<span><strong>Karthik Sukumaran</strong><em>AI &amp; GenAI Solutions Architect</em></span>
 			</a>
 			<span class="meta-item">{% include icon.html name="calendar" size=16 %}{{ page.date | date: '%Y-%m-%d' }}</span>
@@ -77,7 +77,7 @@ body_class: post-page
 		</nav>
 
 		<section class="author-card">
-			<img src="{{ '/images/profile.png' | relative_url }}" alt="Karthik Sukumaran" width="64" height="64">
+			<img src="{{ '/images/avatar-128.jpg' | relative_url }}" alt="Karthik Sukumaran" width="64" height="64">
 			<div>
 				<p class="eyebrow">About the author</p>
 				<h2><a href="{{ '/profile/' | relative_url }}">Karthik Sukumaran</a></h2>
@@ -101,3 +101,15 @@ body_class: post-page
 	</div>
 </section>
 {% endif %}
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{ "@type": "ListItem", "position": 1, "name": "Architecture Notes", "item": "{{ '/' | absolute_url }}" }{% if cat %},
+		{ "@type": "ListItem", "position": 2, "name": {{ cat.title | jsonify }}, "item": "{{ cat.url | absolute_url }}" }{% endif %},
+		{ "@type": "ListItem", "position": {% if cat %}3{% else %}2{% endif %}, "name": {{ page.short | default: page.title | jsonify }}, "item": "{{ page.url | absolute_url }}" }
+	]
+}
+</script>

@@ -1,7 +1,8 @@
 ---
 title: "Polling Publisher: The Simplest Reliable Outbox Relay"
 short: Polling Publisher
-description: How a scheduled job reads unpublished outbox rows and publishes them — batching, SKIP LOCKED for parallel workers, ordering, backoff, cleanup, and when to graduate to CDC.
+description: "Polling Publisher pattern explained: periodically reads the outbox and publishes. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a scheduled job reads unpublished outbox rows and publishes them — batching, SKIP LOCKED for parallel workers, ordering, backoff, cleanup, and when to graduate to CDC.
 summary: Periodically reads the outbox and publishes.
 category: Reliable messaging
 pattern_no: 13

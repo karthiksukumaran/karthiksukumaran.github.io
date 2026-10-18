@@ -1,7 +1,8 @@
 ---
 title: "Three-Phase Commit (3PC): Fixing 2PC's Blocking Problem — On Paper"
 short: Three-Phase Commit (3PC)
-description: What the extra pre-commit phase buys you, why 3PC is non-blocking only under assumptions real networks break, and what production systems use instead.
+description: "Three-Phase Commit (3PC) pattern explained: adds a pre-commit phase to reduce 2PC blocking. Diagrams, code, trade-offs and pitfalls."
+dek: What the extra pre-commit phase buys you, why 3PC is non-blocking only under assumptions real networks break, and what production systems use instead.
 summary: Adds a pre-commit phase to reduce 2PC blocking.
 category: Distributed transactions
 pattern_no: 3

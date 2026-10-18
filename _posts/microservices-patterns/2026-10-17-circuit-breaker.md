@@ -1,7 +1,8 @@
 ---
 title: "Circuit Breaker: Fail Fast When a Dependency Is Down"
 short: Circuit Breaker
-description: How a circuit breaker detects a failing dependency, stops calling it, and probes for recovery — closed, open, and half-open states, threshold tuning, Resilience4j and Polly examples, and mesh-level outlier detection.
+description: "Circuit Breaker pattern explained: stops calling a failing service and fails fast. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a circuit breaker detects a failing dependency, stops calling it, and probes for recovery — closed, open, and half-open states, threshold tuning, Resilience4j and Polly examples, and mesh-level outlier detection.
 summary: Stops calling a failing service and fails fast.
 category: Resilience
 pattern_no: 29

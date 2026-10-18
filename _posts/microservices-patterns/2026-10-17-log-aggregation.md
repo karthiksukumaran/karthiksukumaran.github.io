@@ -1,7 +1,8 @@
 ---
 title: "Log Aggregation: All Your Logs, One Searchable Place"
 short: Log Aggregation
-description: How to collect, structure, ship, store, and search logs from hundreds of containers — structured JSON logging, Fluent Bit and the OTel Collector, ELK vs. Loki vs. Splunk, retention tiers, cost control, and PII hygiene.
+description: "Log Aggregation pattern explained: centralizes logs. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to collect, structure, ship, store, and search logs from hundreds of containers — structured JSON logging, Fluent Bit and the OTel Collector, ELK vs. Loki vs. Splunk, retention tiers, cost control, and PII hygiene.
 summary: Centralizes logs.
 category: Observability
 pattern_no: 51

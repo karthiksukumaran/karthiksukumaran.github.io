@@ -1,7 +1,8 @@
 ---
 title: "Dead Letter Queue (DLQ): Parking Messages That Keep Failing"
 short: Dead Letter Queue (DLQ)
-description: How DLQs isolate poison messages so one bad payload doesn't block a queue — configuration for SQS, RabbitMQ, and Kafka, retry topologies, and a disciplined redrive process.
+description: "Dead Letter Queue (DLQ) pattern explained: parks messages that keep failing. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How DLQs isolate poison messages so one bad payload doesn't block a queue — configuration for SQS, RabbitMQ, and Kafka, retry topologies, and a disciplined redrive process.
 summary: Parks messages that keep failing.
 category: Reliable messaging
 pattern_no: 15

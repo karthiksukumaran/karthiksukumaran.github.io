@@ -1,7 +1,8 @@
 ---
 title: "Load Shedding: Drop Low-Priority Work to Save the Rest"
 short: Load Shedding
-description: How servers protect themselves under overload by rejecting work early and selectively — priority classes, queue-time and concurrency signals, adaptive limits, Envoy overload management, and brownout modes.
+description: "Load Shedding pattern explained: drops low-priority work under load. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How servers protect themselves under overload by rejecting work early and selectively — priority classes, queue-time and concurrency signals, adaptive limits, Envoy overload management, and brownout modes.
 summary: Drops low-priority work under load.
 category: Resilience
 pattern_no: 34

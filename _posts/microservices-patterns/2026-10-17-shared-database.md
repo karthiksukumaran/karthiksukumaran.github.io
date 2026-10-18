@@ -1,7 +1,8 @@
 ---
 title: "Shared Database: When It's an Anti-Pattern — and When It's Fine"
 short: Shared Database
-description: Why several services sharing one database creates a distributed monolith, the specific failure modes, the few cases where sharing is acceptable, and a staged plan to get out.
+description: "Shared Database pattern explained: services share one DB (often an anti-pattern). How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: Why several services sharing one database creates a distributed monolith, the specific failure modes, the few cases where sharing is acceptable, and a staged plan to get out.
 summary: Services share one DB (often an anti-pattern).
 category: Data management
 pattern_no: 20

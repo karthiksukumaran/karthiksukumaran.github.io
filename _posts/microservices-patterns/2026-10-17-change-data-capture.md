@@ -1,7 +1,8 @@
 ---
 title: "Change Data Capture (CDC): Turning Your Database Log Into Events"
 short: Change Data Capture (CDC)
-description: How log-based CDC streams every insert, update, and delete from PostgreSQL, MySQL, or Oracle into Kafka — with Debezium configuration, outbox routing, schema concerns, and operational lessons.
+description: "Change Data Capture (CDC) pattern explained: turns DB log changes into events. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How log-based CDC streams every insert, update, and delete from PostgreSQL, MySQL, or Oracle into Kafka — with Debezium configuration, outbox routing, schema concerns, and operational lessons.
 summary: Turns DB log changes into events.
 category: Reliable messaging
 pattern_no: 12

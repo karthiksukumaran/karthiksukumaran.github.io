@@ -1,7 +1,8 @@
 ---
 title: "API Gateway: One Front Door for Many Services"
 short: API Gateway
-description: What an API gateway should and shouldn't do — routing, authentication, rate limiting, TLS, transformation — with Kong and AWS examples, deployment topologies, and how to avoid turning it into a new monolith.
+description: "API Gateway pattern explained: single entry point for clients. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: What an API gateway should and shouldn't do — routing, authentication, rate limiting, TLS, transformation — with Kong and AWS examples, deployment topologies, and how to avoid turning it into a new monolith.
 summary: Single entry point for clients.
 category: Integration
 pattern_no: 38

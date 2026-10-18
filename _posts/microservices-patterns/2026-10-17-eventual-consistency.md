@@ -1,7 +1,8 @@
 ---
 title: "Eventual Consistency: Designing for Data That Converges Over Time"
 short: Eventual Consistency
-description: What eventual consistency actually guarantees, the CAP and PACELC trade-offs behind it, tunable consistency in DynamoDB and Cassandra, and UX patterns that keep users from noticing.
+description: "Eventual Consistency pattern explained: data syncs over time instead of instantly. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: What eventual consistency actually guarantees, the CAP and PACELC trade-offs behind it, tunable consistency in DynamoDB and Cassandra, and UX patterns that keep users from noticing.
 summary: Data syncs over time instead of instantly.
 category: Distributed transactions
 pattern_no: 6

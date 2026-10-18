@@ -1,7 +1,8 @@
 ---
 title: "Saga Pattern: Distributed Transactions Without Distributed Locks"
 short: Saga
-description: How to keep a multi-service business operation consistent with a chain of local transactions and compensating actions — orchestrated or choreographed.
+description: "Saga pattern explained: chain of local transactions with compensations on failure. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to keep a multi-service business operation consistent with a chain of local transactions and compensating actions — orchestrated or choreographed.
 summary: Chain of local transactions with compensations on failure.
 category: Distributed transactions
 pattern_no: 1

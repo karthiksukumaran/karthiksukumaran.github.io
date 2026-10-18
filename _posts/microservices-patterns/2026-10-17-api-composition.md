@@ -1,7 +1,8 @@
 ---
 title: "API Composition: Joining Data Across Services at Query Time"
 short: API Composition
-description: How a composer calls several services and merges the results for a query — parallel fan-out, partial failure, batching, GraphQL federation, and the point where you should switch to a materialized view.
+description: "API Composition pattern explained: merges data from multiple services for a query. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a composer calls several services and merges the results for a query — parallel fan-out, partial failure, batching, GraphQL federation, and the point where you should switch to a materialized view.
 summary: Merges data from multiple services for a query.
 category: Data management
 pattern_no: 23

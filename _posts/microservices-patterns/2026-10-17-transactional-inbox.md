@@ -1,7 +1,8 @@
 ---
 title: "Transactional Inbox: Deduplicate Before You Process"
 short: Transactional Inbox
-description: How storing incoming messages in an inbox table — in the same transaction as their side effects — turns at-least-once delivery into effectively-once processing.
+description: "Transactional Inbox pattern explained: stores incoming messages before processing to dedupe. Diagrams, code, trade-offs and pitfalls."
+dek: How storing incoming messages in an inbox table — in the same transaction as their side effects — turns at-least-once delivery into effectively-once processing.
 summary: Stores incoming messages before processing to dedupe.
 category: Reliable messaging
 pattern_no: 11

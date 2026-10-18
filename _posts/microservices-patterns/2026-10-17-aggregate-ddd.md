@@ -1,7 +1,8 @@
 ---
 title: "Aggregate (DDD): Drawing the Consistency Boundary"
 short: Aggregate (DDD)
-description: How Domain-Driven Design aggregates group entities into one transactional consistency boundary — rules for sizing them, referencing by ID, enforcing invariants, and how they shape microservice transactions.
+description: "Aggregate (DDD) pattern explained: cluster of objects forming one consistency boundary. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How Domain-Driven Design aggregates group entities into one transactional consistency boundary — rules for sizing them, referencing by ID, enforcing invariants, and how they shape microservice transactions.
 summary: Cluster of objects forming one consistency boundary.
 category: Data management
 pattern_no: 26

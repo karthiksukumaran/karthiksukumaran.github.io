@@ -1,7 +1,8 @@
 ---
 title: "Compensating Transaction: Undoing Work You've Already Committed"
 short: Compensating Transaction
-description: How to reverse a completed step with a semantic opposite — refunds, stock releases, cancellations — and how to make compensations idempotent, ordered, and auditable.
+description: "Compensating Transaction pattern explained: undoes a completed step with an opposite action. Diagrams, code, trade-offs and pitfalls."
+dek: How to reverse a completed step with a semantic opposite — refunds, stock releases, cancellations — and how to make compensations idempotent, ordered, and auditable.
 summary: Undoes a completed step with an opposite action.
 category: Distributed transactions
 pattern_no: 5

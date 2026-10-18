@@ -1,7 +1,8 @@
 ---
 title: "Process Manager: A Stateful Router for Multi-Step Workflows"
 short: Process Manager
-description: How a process manager tracks the state of a long-running business process, decides the next step from each incoming message, and handles timeouts — with a persisted state-machine example.
+description: "Process Manager pattern explained: stateful router driving a multi-step workflow. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a process manager tracks the state of a long-running business process, decides the next step from each incoming message, and handles timeouts — with a persisted state-machine example.
 summary: Stateful router driving a multi-step workflow.
 category: Distributed transactions
 pattern_no: 8

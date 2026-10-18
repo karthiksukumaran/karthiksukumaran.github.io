@@ -1,7 +1,8 @@
 ---
 title: "Orchestration: A Central Coordinator Directs the Flow"
 short: Orchestration
-description: How a workflow orchestrator commands services step by step — durable execution with Temporal, state machines with AWS Step Functions, BPMN with Camunda — plus versioning, idempotency, and keeping the orchestrator thin.
+description: "Orchestration pattern explained: a central coordinator directs services. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a workflow orchestrator commands services step by step — durable execution with Temporal, state machines with AWS Step Functions, BPMN with Camunda — plus versioning, idempotency, and keeping the orchestrator thin.
 summary: A central coordinator directs services.
 category: Integration
 pattern_no: 41

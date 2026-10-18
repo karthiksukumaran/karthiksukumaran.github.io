@@ -1,7 +1,8 @@
 ---
 title: "Reservation Pattern: Holding Resources With an Expiry"
 short: Reservation
-description: How seat holds, cart reservations, and payment authorizations temporarily claim scarce resources — with TTLs, atomic claims, expiry reapers, and protection against overselling.
+description: "Reservation pattern explained: temporarily holds a resource with an expiry. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How seat holds, cart reservations, and payment authorizations temporarily claim scarce resources — with TTLs, atomic claims, expiry reapers, and protection against overselling.
 summary: Temporarily holds a resource with an expiry.
 category: Distributed transactions
 pattern_no: 7

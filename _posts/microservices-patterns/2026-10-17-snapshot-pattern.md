@@ -1,7 +1,8 @@
 ---
 title: "Snapshot Pattern: Fast Loads for Long Event Streams"
 short: Snapshot
-description: How periodic snapshots cap replay time for event-sourced aggregates — when to take them, how to store and version them, and why they're a cache, not a source of truth.
+description: "Snapshot pattern explained: saves state periodically to avoid full event replay. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How periodic snapshots cap replay time for event-sourced aggregates — when to take them, how to store and version them, and why they're a cache, not a source of truth.
 summary: Saves state periodically to avoid full event replay.
 category: Data management
 pattern_no: 27

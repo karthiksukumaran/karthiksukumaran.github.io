@@ -1,7 +1,8 @@
 ---
 title: "Leader Election: Exactly One Instance Does the Job"
 short: Leader Election
-description: How replicas agree on a single leader for scheduled jobs, coordinators, and singleton tasks — leases, fencing tokens, Kubernetes Lease objects, etcd and ZooKeeper recipes, and handling split brain.
+description: "Leader Election pattern explained: picks one instance to do a task. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How replicas agree on a single leader for scheduled jobs, coordinators, and singleton tasks — leases, fencing tokens, Kubernetes Lease objects, etcd and ZooKeeper recipes, and handling split brain.
 summary: Picks one instance to do a task.
 category: Resilience
 pattern_no: 36

@@ -1,7 +1,8 @@
 ---
 title: "Idempotent Consumer: Process Twice, Effect Once"
 short: Idempotent Consumer
-description: Techniques for making message handlers and APIs safe to retry — natural idempotency, dedupe stores, conditional writes, version checks, and idempotency keys for external calls.
+description: "Idempotent Consumer pattern explained: processing a message twice has the same effect as once. Diagrams, code, trade-offs and pitfalls."
+dek: Techniques for making message handlers and APIs safe to retry — natural idempotency, dedupe stores, conditional writes, version checks, and idempotency keys for external calls.
 summary: Processing a message twice has the same effect as once.
 category: Reliable messaging
 pattern_no: 14

@@ -1,7 +1,8 @@
 ---
 title: "Publish-Subscribe: One Event, Many Independent Receivers"
 short: Publish-Subscribe
-description: How pub/sub decouples producers from consumers with topics — Kafka consumer groups, SNS-to-SQS fan-out, Google Pub/Sub subscriptions, filtering, ordering, replay, and subscription governance.
+description: "Publish-Subscribe pattern explained: producers publish to topics, many subscribers receive. Diagrams, code, trade-offs and pitfalls."
+dek: How pub/sub decouples producers from consumers with topics — Kafka consumer groups, SNS-to-SQS fan-out, Google Pub/Sub subscriptions, filtering, ordering, replay, and subscription governance.
 summary: Producers publish to topics, many subscribers receive.
 category: Integration
 pattern_no: 42

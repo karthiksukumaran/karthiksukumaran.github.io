@@ -1,7 +1,8 @@
 ---
 title: "Claim Check: Send a Reference, Not the Payload"
 short: Claim Check
-description: How to move large documents, images, and datasets through a message broker by storing the payload in object storage and passing a small, secure reference — with S3 examples, lifecycle, and security design.
+description: "Claim Check pattern explained: sends a reference instead of a large payload. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to move large documents, images, and datasets through a message broker by storing the payload in object storage and passing a small, secure reference — with S3 examples, lifecycle, and security design.
 summary: Sends a reference instead of a large payload.
 category: Reliable messaging
 pattern_no: 18

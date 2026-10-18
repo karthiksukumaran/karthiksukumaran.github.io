@@ -1,7 +1,8 @@
 ---
 title: "Anti-Corruption Layer: Keep Legacy Models Out of Your Domain"
 short: Anti-Corruption Layer
-description: How a translation layer between your domain and a legacy or external system protects your model — facades, adapters, and translators, with a core-banking example, testing strategies, and when an ACL is worth it.
+description: "Anti-Corruption Layer pattern explained: translates a legacy or external model. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a translation layer between your domain and a legacy or external system protects your model — facades, adapters, and translators, with a core-banking example, testing strategies, and when an ACL is worth it.
 summary: Translates a legacy or external model.
 category: Integration
 pattern_no: 45

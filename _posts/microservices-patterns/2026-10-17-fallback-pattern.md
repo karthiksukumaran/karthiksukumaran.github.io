@@ -1,7 +1,8 @@
 ---
 title: "Fallback: Graceful Degradation When Dependencies Fail"
 short: Fallback
-description: How to return a default, cached, or reduced response when a call fails — choosing fallback strategies per feature, avoiding fallbacks that lie, and wiring them with Resilience4j and Polly.
+description: "Fallback pattern explained: returns a default or cached response on failure. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to return a default, cached, or reduced response when a call fails — choosing fallback strategies per feature, avoiding fallbacks that lie, and wiring them with Resilience4j and Polly.
 summary: Returns a default or cached response on failure.
 category: Resilience
 pattern_no: 32

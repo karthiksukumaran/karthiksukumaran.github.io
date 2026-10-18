@@ -1,7 +1,8 @@
 ---
 title: "Guaranteed Delivery: Messages That Survive Crashes"
 short: Guaranteed Delivery
-description: What it really takes for a message to never be lost — persistence, replication, publisher confirms, consumer acknowledgements — with RabbitMQ and Kafka configurations and the end-to-end chain.
+description: "Guaranteed Delivery pattern explained: persists messages until acknowledged. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: What it really takes for a message to never be lost — persistence, replication, publisher confirms, consumer acknowledgements — with RabbitMQ and Kafka configurations and the end-to-end chain.
 summary: Persists messages until acknowledged.
 category: Reliable messaging
 pattern_no: 16

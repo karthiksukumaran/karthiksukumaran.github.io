@@ -1,7 +1,8 @@
 ---
 title: "Backend for Frontend (BFF): A Tailored API for Each Client"
 short: Backend for Frontend (BFF)
-description: Why one general-purpose API serves web, mobile, and partners poorly, how a BFF per client type shapes responses and owns UI-specific logic, the BFF security pattern for SPAs, and how to avoid duplication.
+description: "Backend for Frontend (BFF) pattern explained: separate gateway per client type. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: Why one general-purpose API serves web, mobile, and partners poorly, how a BFF per client type shapes responses and owns UI-specific logic, the BFF security pattern for SPAs, and how to avoid duplication.
 summary: Separate gateway per client type.
 category: Integration
 pattern_no: 39

@@ -1,7 +1,8 @@
 ---
 title: "Service Mesh: Managing Service-to-Service Traffic as Infrastructure"
 short: Service Mesh
-description: What a service mesh actually provides — mTLS identity, traffic management, resilience policies, and golden-signal telemetry — how Istio and Linkerd work, sidecar vs. ambient data planes, and when a mesh is worth its cost.
+description: "Service Mesh pattern explained: manages service-to-service traffic. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: What a service mesh actually provides — mTLS identity, traffic management, resilience policies, and golden-signal telemetry — how Istio and Linkerd work, sidecar vs. ambient data planes, and when a mesh is worth its cost.
 summary: Manages service-to-service traffic.
 category: Integration
 pattern_no: 48

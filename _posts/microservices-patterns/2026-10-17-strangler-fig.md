@@ -1,7 +1,8 @@
 ---
 title: "Strangler Fig: Replacing a Monolith One Slice at a Time"
 short: Strangler Fig
-description: How to migrate from a legacy system incrementally — routing through a proxy, choosing the first slice, keeping data in sync with CDC, parallel runs and shadow traffic, and retiring the old system safely.
+description: "Strangler Fig pattern explained: gradually replaces a monolith. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How to migrate from a legacy system incrementally — routing through a proxy, choosing the first slice, keeping data in sync with CDC, parallel runs and shadow traffic, and retiring the old system safely.
 summary: Gradually replaces a monolith.
 category: Integration
 pattern_no: 46

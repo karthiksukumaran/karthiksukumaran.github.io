@@ -1,7 +1,8 @@
 ---
 title: "Try-Confirm/Cancel (TCC): Reserve First, Commit Later"
 short: Try-Confirm/Cancel (TCC)
-description: A business-level two-phase protocol for payments and bookings — how Try, Confirm, and Cancel work, how to handle empty rollbacks and suspensions, and when TCC beats a saga.
+description: "Try-Confirm/Cancel (TCC) pattern explained: reserve first, then confirm or cancel. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: A business-level two-phase protocol for payments and bookings — how Try, Confirm, and Cancel work, how to handle empty rollbacks and suspensions, and when TCC beats a saga.
 summary: Reserve first, then confirm or cancel.
 category: Distributed transactions
 pattern_no: 4

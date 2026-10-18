@@ -1,7 +1,8 @@
 ---
 title: "Database per Service: Private Data, Public Contracts"
 short: Database per Service
-description: Why each microservice should own its data store, the isolation levels you can choose (schema, database, server), how to query and stay consistent across services, and how to migrate from a shared database.
+description: "Database per Service pattern explained: each service owns a private DB. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: Why each microservice should own its data store, the isolation levels you can choose (schema, database, server), how to query and stay consistent across services, and how to migrate from a shared database.
 summary: Each service owns a private DB.
 category: Data management
 pattern_no: 19

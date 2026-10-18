@@ -1,7 +1,8 @@
 ---
 title: "Timeout: Every Remote Call Needs a Deadline"
 short: Timeout
-description: Why unbounded waits are the root of most cascading failures, how to choose connect, read, and overall timeouts from latency data, and how to propagate deadlines across services with gRPC and HTTP.
+description: "Timeout pattern explained: caps how long to wait on a call. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: Why unbounded waits are the root of most cascading failures, how to choose connect, read, and overall timeouts from latency data, and how to propagate deadlines across services with gRPC and HTTP.
 summary: Caps how long to wait on a call.
 category: Resilience
 pattern_no: 31

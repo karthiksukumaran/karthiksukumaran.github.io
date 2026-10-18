@@ -8,6 +8,16 @@ author:
 url: "https://karthiksukumaran.com"
 baseurl: ""
 lang: en
+locale: en_IN
+
+# SEO (jekyll-seo-tag): default share image, card type, and identity for structured data
+logo: /images/android-chrome-512x512.png
+twitter:
+  card: summary_large_image
+social:
+  name: Karthik Sukumaran
+  links:
+    - https://www.linkedin.com/in/karthiksukumaran06/
 
 # Build
 markdown: kramdown
@@ -34,6 +44,10 @@ collections:
     permalink: /category/:name/
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/social-card.jpg
   - scope:
       path: ""
       type: posts

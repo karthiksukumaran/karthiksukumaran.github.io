@@ -1,7 +1,8 @@
 ---
 title: "Distributed Tracing: Following One Request Across Every Service"
 short: Distributed Tracing
-description: How traces, spans, and context propagation reveal where time goes and where errors start in a distributed system — OpenTelemetry instrumentation, the Collector, sampling strategies, async messaging, and trace-driven debugging.
+description: "Distributed Tracing pattern explained: follows a request across services. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How traces, spans, and context propagation reveal where time goes and where errors start in a distributed system — OpenTelemetry instrumentation, the Collector, sampling strategies, async messaging, and trace-driven debugging.
 summary: Follows a request across services.
 category: Observability
 pattern_no: 50

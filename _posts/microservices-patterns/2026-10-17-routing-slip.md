@@ -1,7 +1,8 @@
 ---
 title: "Routing Slip: Messages That Carry Their Own Itinerary"
 short: Routing Slip
-description: How a routing slip attaches the list of processing steps to the message itself, with compensation logs for rollback — and when it beats a central orchestrator.
+description: "Routing Slip pattern explained: message carries its own list of steps. How it works, diagrams, code examples, trade-offs and common pitfalls."
+dek: How a routing slip attaches the list of processing steps to the message itself, with compensation logs for rollback — and when it beats a central orchestrator.
 summary: Message carries its own list of steps.
 category: Distributed transactions
 pattern_no: 9
