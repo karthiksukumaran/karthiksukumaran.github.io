@@ -1,0 +1,103 @@
+---
+layout: default
+body_class: post-page
+---
+{% assign cat = site.blog_categories | where: "title", page.category | first %}
+{% assign words = content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: 200 | plus: 1 %}
+
+{% comment %} Previous/next: within the series if the post has one, otherwise within its category by date {% endcomment %}
+{% if page.series %}
+  {% assign siblings = site.posts | where: "series", page.series | sort: "pattern_no" %}
+{% else %}
+  {% assign siblings = site.posts | where: "category", page.category | reverse %}
+{% endif %}
+{% for p in siblings %}{% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+{% assign prev_i = idx | minus: 1 %}
+{% assign next_i = idx | plus: 1 %}
+
+<section class="hero-band hero-post" style="--cat: {{ cat.color | default: '#7c5cf0' }}">
+	<div class="wrap">
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<a href="{{ '/' | relative_url }}">Architecture Notes</a>
+			{% if cat %}<span>›</span><a href="{{ cat.url | relative_url }}">{{ cat.title }}</a>{% endif %}
+		</nav>
+		<p class="post-tags">
+			{% if page.pattern_no %}<span class="res-tag">pattern {{ page.pattern_no | prepend: '0' | slice: -2, 2 }}</span>{% endif %}
+			{% if page.series %}<span class="res-tag">{{ page.series | downcase }}</span>{% endif %}
+		</p>
+		<h1>{{ page.title }}</h1>
+		{% if page.description %}<p class="hero-sub">{{ page.description }}</p>{% endif %}
+		<div class="post-meta">
+			<a class="byline" href="{{ '/profile/' | relative_url }}">
+				<img src="{{ '/images/profile.png' | relative_url }}" alt="" width="40" height="40">
+				<span><strong>Karthik Sukumaran</strong><em>AI &amp; GenAI Solutions Architect</em></span>
+			</a>
+			<span class="meta-item">{% include icon.html name="calendar" size=16 %}{{ page.date | date: '%Y-%m-%d' }}</span>
+			<span class="meta-item">{% include icon.html name="clock" size=16 %}{{ minutes }} min read</span>
+		</div>
+	</div>
+</section>
+
+<div class="wrap post-grid">
+	<aside class="toc" aria-label="On this page">
+		<p class="toc-title">On this page</p>
+		<ol id="tocList"></ol>
+	</aside>
+
+	<article class="post-body">
+		{% if page.summary or page.tools %}
+		<div class="glance">
+			{% if page.summary %}
+			<div class="glance-row">
+				<span class="glance-label">What it does</span>
+				<span>{{ page.summary }}</span>
+			</div>
+			{% endif %}
+			{% if page.tools %}
+			<div class="glance-row">
+				<span class="glance-label">Example tools</span>
+				<span class="glance-tools">{% for t in page.tools %}<span>{{ t }}</span>{% endfor %}</span>
+			</div>
+			{% endif %}
+		</div>
+		{% endif %}
+
+		<div class="prose" id="prose">
+			{{ content }}
+		</div>
+
+		<nav class="series-nav" aria-label="More posts">
+			{% if idx and idx > 0 %}{% assign prev = siblings[prev_i] %}
+			<a class="sn prev" href="{{ prev.url | relative_url }}"><span>← Previous</span><strong>{{ prev.short | default: prev.title }}</strong></a>
+			{% else %}<span></span>{% endif %}
+			{% if next_i < siblings.size %}{% assign next = siblings[next_i] %}
+			<a class="sn next" href="{{ next.url | relative_url }}"><span>Next →</span><strong>{{ next.short | default: next.title }}</strong></a>
+			{% endif %}
+		</nav>
+
+		<section class="author-card">
+			<img src="{{ '/images/profile.png' | relative_url }}" alt="Karthik Sukumaran" width="64" height="64">
+			<div>
+				<p class="eyebrow">About the author</p>
+				<h2><a href="{{ '/profile/' | relative_url }}">Karthik Sukumaran</a></h2>
+				<p>AI / GenAI Solutions Architect with 16+ years architecting enterprise platforms for global banks — from microservice re-architecture at Citibank APAC to agentic GenAI platforms at HCLTech.</p>
+				<a class="text-link" href="{{ '/profile/' | relative_url }}">View profile {% include icon.html name="arrow" size=16 %}</a>
+			</div>
+		</section>
+	</article>
+</div>
+
+{% assign same = site.posts | where: "category", page.category %}
+{% if same.size > 1 %}
+<section class="wrap block related">
+	<header class="block-head">
+		<div><h2>More in {{ page.category }}</h2></div>
+		{% if cat %}<a class="text-link" href="{{ cat.url | relative_url }}">Open category {% include icon.html name="arrow" size=16 %}</a>{% endif %}
+	</header>
+	<div class="res-grid">
+		{% assign shown = 0 %}
+		{% for p in same %}{% if p.url != page.url and shown < 4 %}{% include post-card.html post=p %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
+	</div>
+</section>
+{% endif %}

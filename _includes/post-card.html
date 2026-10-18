@@ -1,0 +1,10 @@
+{% comment %} Resource card: mono tag, date + read time, title, summary, arrow. Pass extra=true to hide it behind "Show more". {% endcomment %}
+{% assign w = include.post.content | strip_html | number_of_words | divided_by: 200 | plus: 1 %}
+{% assign c = site.blog_categories | where: "title", include.post.category | first %}
+<a class="res-card{% if include.extra %} is-extra{% endif %}" href="{{ include.post.url | relative_url }}" style="--cat: {{ c.color | default: '#7c5cf0' }}">
+	<span class="res-tag">{% if include.post.pattern_no %}pattern {{ include.post.pattern_no | prepend: '0' | slice: -2, 2 }}{% else %}article{% endif %}</span>
+	<span class="res-date">{% include icon.html name="calendar" size=14 %}{{ include.post.date | date: '%Y-%m-%d' }}<span class="res-sep">·</span>{{ w }} min read</span>
+	<span class="res-title">{{ include.post.short | default: include.post.title }}</span>
+	<span class="res-desc">{{ include.post.summary | default: include.post.description }}</span>
+	<span class="res-arrow">{% include icon.html name="arrow" size=18 %}</span>
+</a>

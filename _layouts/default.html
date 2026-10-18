@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% seo %}
+	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#0f141a" media="(prefers-color-scheme: dark)">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}">
+	<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+	{% feed_meta %}
+	<script>
+		try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+	</script>
+</head>
+<body class="{{ page.body_class | default: 'page' }}">
+	{% assign nav_categories = site.blog_categories | sort: "order" %}
+	<a class="skip" href="#content">Skip to content</a>
+
+	<header class="site-header">
+		<div class="wrap header-inner">
+			<a href="{{ '/profile/' | relative_url }}" class="brand" title="Karthik Sukumaran — profile">
+				<img src="{{ '/images/profile.png' | relative_url }}" alt="" width="32" height="32">
+				<span>Karthik Sukumaran</span>
+			</a>
+			<div class="header-actions">
+				<a href="{{ '/profile/' | relative_url }}" class="header-link">Profile</a>
+				<a href="{{ '/feed.xml' | relative_url }}" class="header-link header-rss">RSS</a>
+				<button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+					<svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+					<svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+				</button>
+				<a href="https://www.linkedin.com/in/karthiksukumaran06/" target="_blank" rel="noopener" class="btn btn-dark">Connect</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="subnav-wrap">
+		<nav class="wrap subnav" aria-label="Blog">
+			<a href="{{ '/' | relative_url }}" class="subnav-title">Architecture Notes</a>
+			<details class="subnav-menu">
+				<summary>Categories {% include icon.html name="chevron" size=16 %}</summary>
+				<div class="menu-panel">
+					{% for c in nav_categories %}
+					{% assign n = site.posts | where: "category", c.title | size %}
+					{% if n > 0 %}
+					<a href="{{ c.url | relative_url }}" style="--cat: {{ c.color }}">
+						<span class="menu-icon">{% include icon.html name=c.icon size=18 %}</span>
+						<span><strong>{{ c.title }}</strong><em>{{ n }} posts</em></span>
+					</a>
+					{% endif %}
+					{% endfor %}
+				</div>
+			</details>
+			<a href="{{ '/#overview' | relative_url }}" class="subnav-link">Overview</a>
+			<a href="{{ '/profile/' | relative_url }}" class="subnav-link">About the author</a>
+		</nav>
+	</div>
+
+	<main id="content">
+		{{ content }}
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<div class="footer-top">
+				<div class="footer-cta">
+					<p class="footer-title">Architecture Notes</p>
+					<p>Practical guides to building distributed systems that stay correct, resilient, and observable.</p>
+					<a href="https://www.linkedin.com/in/karthiksukumaran06/" target="_blank" rel="noopener" class="btn btn-light">Connect on LinkedIn</a>
+				</div>
+				<div class="footer-cols">
+					<div>
+						<p class="footer-head">Categories</p>
+						{% for c in nav_categories %}{% assign n = site.posts | where: "category", c.title | size %}{% if n > 0 %}<a href="{{ c.url | relative_url }}">{{ c.title }}</a>{% endif %}{% endfor %}
+					</div>
+					<div>
+						<p class="footer-head">Author</p>
+						<a href="{{ '/profile/' | relative_url }}">Profile</a>
+						<a href="https://www.linkedin.com/in/karthiksukumaran06/" target="_blank" rel="noopener">LinkedIn</a>
+						<a href="mailto:karthik.sukumaran@gmail.com">Email</a>
+					</div>
+					<div>
+						<p class="footer-head">Follow</p>
+						<a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
+						<a href="{{ '/' | relative_url }}">All posts</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-base">
+				<span>© {{ site.time | date: '%Y' }} Karthik Sukumaran. All rights reserved.</span>
+				<a href="#content">Back to top ↑</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="{{ '/assets/js/blog.js' | relative_url }}" defer></script>
+	{% if page.layout == 'post' %}
+	<script type="module">
+		const blocks = document.querySelectorAll('.language-mermaid');
+		if (blocks.length) {
+			const { default: mermaid } = await import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs');
+			const sources = [];
+			blocks.forEach((node) => {
+				// kramdown emits either <div class="language-mermaid highlighter-rouge"><pre>… or a bare <pre><code class="language-mermaid">
+				const b = node.closest('div.highlighter-rouge') || (node.parentElement && node.parentElement.tagName === 'PRE' ? node.parentElement : node);
+				const code = node.tagName === 'CODE' ? node : (node.querySelector('code') || node);
+				const el = document.createElement('div');
+				el.className = 'mermaid';
+				el.textContent = code.textContent;
+				sources.push(el);
+				const fig = document.createElement('figure');
+				fig.className = 'diagram';
+				fig.appendChild(el);
+				b.replaceWith(fig);
+			});
+			const render = async () => {
+				const root = document.documentElement;
+				const t = root.getAttribute('data-theme');
+				const dark = t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+				mermaid.initialize({
+					startOnLoad: false,
+					theme: 'base',
+					fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif',
+					flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis' },
+					sequence: { useMaxWidth: false, mirrorActors: false },
+					state: { useMaxWidth: false },
+					themeVariables: dark ? {
+						primaryColor: '#1b232d', primaryTextColor: '#e6e9ee', primaryBorderColor: '#a78bfa',
+						lineColor: '#a78bfa', secondaryColor: '#161d26', tertiaryColor: '#0f141a',
+						noteBkgColor: '#2a2440', noteTextColor: '#e6e9ee', actorBkg: '#1b232d', actorBorder: '#a78bfa',
+						actorTextColor: '#e6e9ee', signalColor: '#9aa5b1', signalTextColor: '#e6e9ee', labelBoxBkgColor: '#1b232d',
+						edgeLabelBackground: '#0f141a', clusterBkg: '#161d26', clusterBorder: '#2b3542'
+					} : {
+						primaryColor: '#f1edfd', primaryTextColor: '#161d26', primaryBorderColor: '#7c5cf0',
+						lineColor: '#7c5cf0', secondaryColor: '#f3f3f7', tertiaryColor: '#ffffff',
+						noteBkgColor: '#fdf6dc', noteTextColor: '#161d26', actorBkg: '#f1edfd', actorBorder: '#7c5cf0',
+						signalColor: '#4b5563', edgeLabelBackground: '#ffffff', clusterBkg: '#fafafc', clusterBorder: '#e2e2ea'
+					}
+				});
+				sources.forEach((el) => {
+					if (!el.dataset.src) el.dataset.src = el.textContent;
+					el.removeAttribute('data-processed');
+					el.innerHTML = '';
+					el.textContent = el.dataset.src;
+				});
+				try { await mermaid.run({ nodes: sources }); } catch (e) { console.warn('Mermaid render failed', e); }
+				// Shrink diagrams that are a little too wide; let very wide ones scroll instead of becoming unreadable.
+				sources.forEach((el) => {
+					const svg = el.querySelector('svg');
+					if (!svg) return;
+					const natural = svg.viewBox && svg.viewBox.baseVal ? svg.viewBox.baseVal.width : svg.getBoundingClientRect().width;
+					const room = el.parentElement.clientWidth - 44;
+					svg.style.width = natural + 'px';
+					if (natural > room && natural / room < 1.6) { svg.style.width = '100%'; }
+				});
+			};
+			await render();
+			window.addEventListener('themechange', render);
+		}
+	</script>
+	{% endif %}
+</body>
+</html>

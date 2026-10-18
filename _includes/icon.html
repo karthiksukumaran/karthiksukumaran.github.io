@@ -1,0 +1,16 @@
+{% comment %}
+  Inline line icons (24×24, stroke = currentColor). Usage: include icon.html with name="shield".
+  Add a new `when` branch to support another icon name in _blog_categories/*.md.
+{% endcomment %}<svg class="icon {{ include.class }}" viewBox="0 0 24 24" width="{{ include.size | default: 24 }}" height="{{ include.size | default: 24 }}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{% case include.name %}
+{% when "transactions" %}<path d="M4 7h13"/><path d="m14 4 3 3-3 3"/><path d="M20 17H7"/><path d="m10 14-3 3 3 3"/>
+{% when "messaging" %}<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>
+{% when "database" %}<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>
+{% when "shield" %}<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/>
+{% when "plug" %}<path d="M9 2v6"/><path d="M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0Z"/><path d="M12 18v4"/>
+{% when "pulse" %}<path d="M3 12h4l3-8 4 16 3-8h4"/>
+{% when "calendar" %}<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>
+{% when "arrow" %}<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+{% when "chevron" %}<path d="m6 9 6 6 6-6"/>
+{% when "clock" %}<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+{% else %}<circle cx="12" cy="12" r="9"/>
+{% endcase %}</svg>

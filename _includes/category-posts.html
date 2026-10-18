@@ -1,0 +1,8 @@
+{% comment %}
+  Returns the posts of one category in display order, as `cat_posts`.
+  Categories with `order_by: pattern` are ordered by pattern_no; everything else newest first.
+{% endcomment %}
+{% assign cat_posts = site.posts | where: "category", include.title %}
+{% if include.order_by == "pattern" %}
+  {% assign cat_posts = cat_posts | sort: "pattern_no", "last" %}
+{% endif %}

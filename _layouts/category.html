@@ -1,0 +1,27 @@
+---
+layout: default
+body_class: category-page
+---
+{% include category-posts.html title=page.title order_by=page.order_by %}
+
+<section class="hero-band" style="--cat: {{ page.color | default: '#7c5cf0' }}">
+	<div class="wrap">
+		<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Architecture Notes</a><span>›</span><span>{{ page.title }}</span></nav>
+		<h1><span class="hero-icon">{% include icon.html name=page.icon size=30 %}</span>{{ page.title }}</h1>
+		<p class="hero-sub">{{ page.description }}</p>
+		{% if cat_posts.size > 0 %}{% assign lead = cat_posts | first %}<a class="btn btn-pill" href="{{ lead.url | relative_url }}">Start with {{ lead.short | default: lead.title }}</a>{% endif %}
+	</div>
+</section>
+
+<section class="wrap block">
+	{% if page.group %}<p class="eyebrow">{{ page.group }}</p>{% endif %}
+	<h2>All {{ page.title | downcase }} posts</h2>
+	<p class="displaying">Displaying 1-{{ cat_posts.size }} ({{ cat_posts.size }})</p>
+	{% if cat_posts.size > 0 %}
+	<div class="res-grid">
+		{% for p in cat_posts %}{% include post-card.html post=p %}{% endfor %}
+	</div>
+	{% else %}
+	<p class="empty">Posts in this category are coming soon.</p>
+	{% endif %}
+</section>

@@ -1,0 +1,63 @@
+title: Karthik Sukumaran — Architecture Notes
+description: >-
+  Practical, architect-level guides to microservices, distributed systems,
+  and GenAI architecture by Karthik Sukumaran.
+author:
+  name: Karthik Sukumaran
+  url: /profile/
+url: "https://karthiksukumaran.com"
+baseurl: ""
+lang: en
+
+# Build
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+  toc_levels: 2..3
+permalink: /blog/:title/
+future: true
+timezone: Asia/Kolkata
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Each file in _blog_categories/ is one blog category (title, color, order, description).
+# Its page is generated at /category/<file-name>/. Posts join it with `category: <title>`.
+collections:
+  blog_categories:
+    output: true
+    permalink: /category/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Karthik Sukumaran
+  - scope:
+      path: ""
+      type: blog_categories
+    values:
+      layout: category
+  - scope:
+      path: "_posts/microservices-patterns"
+    values:
+      # The microservices pattern posts form one numbered series
+      series: Microservices Patterns Field Guide
+
+exclude:
+  - README.md
+  - codepush.cmd
+  - Gemfile
+  - Gemfile.lock
+  - "*.svg"
+  - images/about.txt
+  - vendor
+  - .claude
+  - node_modules
